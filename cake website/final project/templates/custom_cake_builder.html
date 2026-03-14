@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% if editing_mode %}
+        Edit Your Cake Design - Cake Shop
+        {% else %}
+        Custom Cake Builder - Cake Shop
+        {% endif %}
+    </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="/static/css/custom_cake.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="{{ url_for('index') }}">
+                <img src="/static/logo.png" alt="Cake Shop" height="40">
+            </a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('shop') }}">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="{{ url_for('custom_cake_builder') }}">Custom Cake</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('cart') }}">Cart</a></li>
+                    {% if session.user_id %}
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('profile') }}">Profile</a></li>
+                    {% else %}
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('login') }}">Login</a></li>
+                    {% endif %}
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Builder Header -->
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-12 text-center">
+                {% if editing_mode %}
+                <h1 class="display-4">✏️ Edit Your Cake Design</h1>
+                <p class="lead">Make changes to your custom cake</p>
+                <div class="alert alert-info">
+                    <i class="fas fa-info-circle"></i> You're editing a cake from your cart. Changes will update the existing item.
+                </div>
+                {% else %}
+                <h1 class="display-4">🎂 Build Your Dream Cake</h1>
+                <p class="lead">Customize every detail of your perfect cake</p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+    <!-- Builder Form -->
+    <form method="POST" action="{{ url_for('custom_cake_preview') }}" id="customCakeForm">
+        <!-- Hidden field for editing mode -->
+        {% if editing_customization %}
+        <input type="hidden" name="editing_custom_id" value="{{ editing_customization.custom_id }}">
+        {% endif %}
+
+        <div class="container mt-4">
+            <div class="row">
+                <!-- Left Column - Customization Steps -->
+                <div class="col-lg-8">
+                    <div class="card mb-4">
+                        <div class="card-header bg-primary text-white">
+                            <h4 class="mb-0"><i class="fas fa-layer-group"></i> 1. Layers & Structure</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Cake Layers</label>
+                                    <select class="form-select" name="layer" id="layerSelect" required>
+                                        {% for layer in layers %}
+                                        <option value="{{ layer.id }}" data-price="{{ layer.price }}"
+                                            {% if editing_customization and editing_customization.layer.id == layer.id %}selected{% endif %}>
+                                            {{ layer.name }} - ₹{{ layer.price }}
+                                        </option>
+                                        {% endfor %}
+                                    </select>
+                                    <small class="text-muted">{{ layers[0].description }}</small>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Structure Support</label>
+                                    <select class="form-select" name="support" id="supportSelect">
+                                        {% for support in options.supports %}
+                                        <option value="{{ support.id }}" data-price="{{ support.price }}"
+                                            {% if editing_customization and editing_customization.support.id == support.id %}selected{% endif %}>
+                                            {{ support.name }} - ₹{{ support.price }}
+                                        </option>
+                                        {% endfor %}
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4">
+                        <div class="card-header bg-success text-white">
+                            <h4 class="mb-0"><i class="fas fa-birthday-cake"></i> 2. Shape & Size</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Cake Shape</label>
+                                    <select class="form-select" name="shape" id="shapeSelect" required>
+                                        {% for shape in shapes %}
+                                        <option value="{{ shape.id }}" data-price="{{ shape.price }}" data-sizes="{{ shape.sizes|join(',') }}"
+                                            {% if editing_customization and editing_customization.shape.id == shape.id %}selected{% endif %}>
+                                            {{ shape.name }} - ₹{{ shape.price }}
+                                        </option>
+                                        {% endfor %}
+                                    </select>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Size</label>
+                                    <select class="form-select" name="size" id="sizeSelect" required>
+                                        <!-- Options will be populated by JavaScript -->
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4">
+                        <div class="card-header bg-warning text-dark">
+                            <h4 class="mb-0"><i class="fas fa-fill-drip"></i> 3. Fillings & Frosting</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Filling</label>
+                                    <select class="form-select" name="filling" id="fillingSelect" required>
+                                        {% for filling in fillings %}
+                                        <option value="{{ filling.id }}" data-price="{{ filling.price }}" data-colorable="{{ filling.colorable }}"
+                                            {% if editing_customization and editing_customization.filling.id == filling.id %}selected{% endif %}>
+                                            {{ filling.name }} - ₹{{ filling.price }}
+                                        </option>
+                                        {% endfor %}
+                                    </select>
+                                    <div class="mt-2" id="fillingColorSection">
+                                        <label class="form-label">Filling Color</label>
+                                        <input type="color" name="filling_color" id="fillingColor" class="form-control form-control-color"
+                                            value="{% if editing_customization %}{{ editing_customization.colors.filling_color }}{% else %}#FFFFFF{% endif %}">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Frosting/Icing</label>
+                                    <select class="form-select" name="frosting" id="frostingSelect" required>
+                                        {% for frosting in frostings %}
+                                        <option value="{{ frosting.id }}" data-price="{{ frosting.price }}" data-colorable="{{ frosting.colorable }}"
+                                            {% if editing_customization and editing_customization.frosting.id == frosting.id %}selected{% endif %}>
+                                            {{ frosting.name }} - ₹{{ frosting.price }}
+                                        </option>
+                                        {% endfor %}
+                                    </select>
+                                    <div class="mt-2" id="frostingColorSection">
+                                        <label class="form-label">Frosting Color</label>
+                                        <input type="color" name="frosting_color" id="frostingColor" class="form-control form-control-color"
+                                            value="{% if editing_customization %}{{ editing_customization.colors.frosting_color }}{% else %}#FFFFFF{% endif %}">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4">
+                        <div class="card-header bg-info text-white">
+                            <h4 class="mb-0"><i class="fas fa-palette"></i> 4. Decoration & Theme</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Theme</label>
+                                    <select class="form-select" name="theme" id="themeSelect">
+                                        {% for theme in options.themes %}
+                                        <option value="{{ theme.id }}" data-price="{{ theme.price }}" data-colorable="{{ theme.colorable }}"
+                                            {% if editing_customization and editing_customization.theme.id == theme.id %}selected{% endif %}>
+                                            {{ theme.name }} - ₹{{ theme.price }}
+                                        </option>
+                                        {% endfor %}
+                                    </select>
+                                    <div class="mt-2" id="themeColorSection">
+                                        <label class="form-label">Theme Color</label>
+                                        <input type="color" name="theme_color" id="themeColor" class="form-control form-control-color"
+                                            value="{% if editing_customization %}{{ editing_customization.colors.theme_color }}{% else %}#FFFFFF{% endif %}">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Cake Topper</label>
+                                    <select class="form-select" name="topper" id="topperSelect">
+                                        {% for topper in options.toppers %}
+                                        <option value="{{ topper.id }}" data-price="{{ topper.price }}" data-colorable="{{ topper.colorable }}"
+                                            {% if editing_customization and editing_customization.topper.id == topper.id %}selected{% endif %}>
+                                            {{ topper.name }} - ₹{{ topper.price }}
+                                        </option>
+                                        {% endfor %}
+                                    </select>
+                                    <div class="mt-2" id="topperColorSection">
+                                        <label class="form-label">Topper Color</label>
+                                        <input type="color" name="topper_color" id="topperColor" class="form-control form-control-color"
+                                            value="{% if editing_customization %}{{ editing_customization.colors.topper_color }}{% else %}#FFFFFF{% endif %}">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4">
+                        <div class="card-header bg-secondary text-white">
+                            <h4 class="mb-0"><i class="fas fa-magic"></i> 5. Extra Details</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Piped Designs/Borders</label>
+                                    <select class="form-select" name="piping" id="pipingSelect">
+                                        {% for piping in options.piped_designs %}
+                                        <option value="{{ piping.id }}" data-price="{{ piping.price }}" data-colorable="{{ piping.colorable }}"
+                                            {% if editing_customization and editing_customization.piping.id == piping.id %}selected{% endif %}>
+                                            {{ piping.name }} - ₹{{ piping.price }}
+                                        </option>
+                                        {% endfor %}
+                                    </select>
+                                    <div class="mt-2" id="pipingColorSection">
+                                        <label class="form-label">Piping Color</label>
+                                        <input type="color" name="piping_color" id="pipingColor" class="form-control form-control-color"
+                                            value="{% if editing_customization %}{{ editing_customization.colors.piping_color }}{% else %}#FFFFFF{% endif %}">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Embellishments</label>
+                                    <select class="form-select" name="embellishment" id="embellishmentSelect">
+                                        {% for embellishment in options.embellishments %}
+                                        <option value="{{ embellishment.id }}" data-price="{{ embellishment.price }}" data-colorable="{{ embellishment.colorable }}"
+                                            {% if editing_customization and editing_customization.embellishment.id == embellishment.id %}selected{% endif %}>
+                                            {{ embellishment.name }} - ₹{{ embellishment.price }}
+                                        </option>
+                                        {% endfor %}
+                                    </select>
+                                    <div class="mt-2" id="embellishmentColorSection">
+                                        <label class="form-label">Embellishment Color</label>
+                                        <input type="color" name="embellishment_color" id="embellishmentColor" class="form-control form-control-color"
+                                            value="{% if editing_customization %}{{ editing_customization.colors.embellishment_color }}{% else %}#FFFFFF{% endif %}">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4">
+                        <div class="card-header bg-dark text-white">
+                            <h4 class="mb-0"><i class="fas fa-gift"></i> 6. Presentation & Message</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Packaging/Cake Box</label>
+                                    <select class="form-select" name="packaging" id="packagingSelect">
+                                        {% for package in options.packaging %}
+                                        <option value="{{ package.id }}" data-price="{{ package.price }}"
+                                            {% if editing_customization and editing_customization.packaging.id == package.id %}selected{% endif %}>
+                                            {{ package.name }} - ₹{{ package.price }}
+                                        </option>
+                                        {% endfor %}
+                                    </select>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Custom Message (Optional)</label>
+                                    <textarea class="form-control" name="message" id="messageText" rows="3" placeholder="Happy Birthday!">
+                                        {% if editing_customization and editing_customization.message %}{{ editing_customization.message }}{% endif %}
+                                    </textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column - Preview & Summary -->
+                <div class="col-lg-4">
+                    <div class="sticky-top" style="top: 20px;">
+                        <div class="card mb-4">
+                            <div class="card-header bg-danger text-white">
+                                <h4 class="mb-0"><i class="fas fa-eye"></i> Live Preview</h4>
+                            </div>
+                            <div class="card-body text-center">
+                                <div id="cakePreview" class="mb-3">
+                                    <div class="cake-visual">
+                                        <div class="cake-base"></div>
+                                        <div class="cake-filling"></div>
+                                        <div class="cake-frosting"></div>
+                                        <div class="cake-topper"></div>
+                                    </div>
+                                </div>
+                                <p class="text-muted">Preview updates as you make selections</p>
+                            </div>
+                        </div>
+
+                        <div class="card mb-4">
+                            <div class="card-header bg-success text-white">
+                                <h4 class="mb-0"><i class="fas fa-receipt"></i> Price Summary</h4>
+                            </div>
+                            <div class="card-body">
+                                <div id="priceSummary">
+                                    <div class="d-flex justify-content-between">
+                                        <span>Base Cake:</span>
+                                        <span>₹<span id="basePrice">100.00</span></span>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <span>Filling:</span>
+                                        <span>₹<span id="fillingPrice">20.00</span></span>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <span>Frosting:</span>
+                                        <span>₹<span id="frostingPrice">30.00</span></span>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <span>Decoration:</span>
+                                        <span>₹<span id="decorationPrice">15.00</span></span>
+                                    </div>
+                                    <hr>
+                                    <div class="d-flex justify-content-between fw-bold fs-5">
+                                        <span>Total:</span>
+                                        <span>₹<span id="totalPrice">165.00</span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-body">
+                                <button type="submit" class="btn btn-primary btn-lg w-100 mb-2">
+                                    <i class="fas fa-eye"></i>
+                                    {% if editing_mode %}
+                                    Update & Preview
+                                    {% else %}
+                                    Preview Your Cake
+                                    {% endif %}
+                                </button>
+                                {% if not editing_mode %}
+                                <button type="button" class="btn btn-outline-success btn-lg w-100" onclick="saveDesign()">
+                                    <i class="fas fa-save"></i> Save Design
+                                </button>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <!-- Footer -->
+    <footer class="bg-light py-4 mt-5">
+        <div class="container text-center">
+            <p>&copy; 2024 Cake Shop. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Save Design Modal -->
+    <div class="modal fade" id="saveDesignModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Save Your Design</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label class="form-label">Design Name</label>
+                        <input type="text" class="form-control" id="designName" placeholder="My Birthday Cake">
+                    </div>
+                    <div id="saveMessage" class="alert d-none"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary" onclick="saveDesignToServer()">Save Design</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Initialize sizes based on selected shape
+        function updateSizes() {
+            const shapeSelect = document.getElementById('shapeSelect');
+            const sizeSelect = document.getElementById('sizeSelect');
+            const selectedOption = shapeSelect.options[shapeSelect.selectedIndex];
+            const sizes = selectedOption.getAttribute('data-sizes').split(',');
+
+            sizeSelect.innerHTML = '';
+            sizes.forEach(size => {
+                const option = document.createElement('option');
+                option.value = size;
+                option.textContent = size;
+
+                // Check if this size was previously selected
+                {% if editing_customization %}
+                if (size === "{{ editing_customization.size }}") {
+                    option.selected = true;
+                }
+                {% endif %}
+
+                sizeSelect.appendChild(option);
+            });
+
+            // If no size selected yet and we have a saved size, select it
+            {% if editing_customization %}
+            if (!sizeSelect.value && "{{ editing_customization.size }}") {
+                sizeSelect.value = "{{ editing_customization.size }}";
+            }
+            {% endif %}
+        }
+
+        // Show/hide color pickers based on colorable option
+        function toggleColorSections() {
+            const sections = ['filling', 'frosting', 'theme', 'topper', 'piping', 'embellishment'];
+
+            sections.forEach(section => {
+                const select = document.getElementById(section + 'Select');
+                const colorSection = document.getElementById(section + 'ColorSection');
+                const selectedOption = select.options[select.selectedIndex];
+                const isColorable = selectedOption.getAttribute('data-colorable') === 'True';
+
+                colorSection.style.display = isColorable ? 'block' : 'none';
+            });
+        }
+
+        // Update price summary
+        function updatePriceSummary() {
+            let total = 0;
+
+            // Get all selects and add their prices
+            const selects = document.querySelectorAll('select[name]');
+            selects.forEach(select => {
+                const selectedOption = select.options[select.selectedIndex];
+                const price = parseFloat(selectedOption.getAttribute('data-price')) || 0;
+                total += price;
+
+                // Update specific price elements
+                if (select.name === 'layer') {
+                    document.getElementById('basePrice').textContent = price.toFixed(2);
+                } else if (select.name === 'filling') {
+                    document.getElementById('fillingPrice').textContent = price.toFixed(2);
+                } else if (select.name === 'frosting') {
+                    document.getElementById('frostingPrice').textContent = price.toFixed(2);
+                } else if (['topper', 'piping', 'embellishment', 'theme'].includes(select.name)) {
+                    // Sum all decoration prices
+                    let decorationTotal = 0;
+                    ['topper', 'piping', 'embellishment', 'theme'].forEach(name => {
+                        const decSelect = document.querySelector(`select[name="${name}"]`);
+                        if (decSelect) {
+                            const decPrice = parseFloat(decSelect.options[decSelect.selectedIndex].getAttribute('data-price')) || 0;
+                            decorationTotal += decPrice;
+                        }
+                    });
+                    document.getElementById('decorationPrice').textContent = decorationTotal.toFixed(2);
+                }
+            });
+
+            document.getElementById('totalPrice').textContent = total.toFixed(2);
+        }
+
+        // Function to pre-fill form when editing
+        function prefillCustomization() {
+            {% if editing_customization %}
+            console.log("Prefilling customization for editing mode");
+
+            // Update sizes based on selected shape (done in updateSizes)
+            // Toggle color sections based on selections
+            toggleColorSections();
+
+            // Update price summary
+            updatePriceSummary();
+
+            // Update cake preview colors
+            updateCakePreview();
+            {% endif %}
+        }
+
+        // Update cake preview with colors
+        function updateCakePreview() {
+            const fillingColor = document.getElementById('fillingColor').value;
+            const frostingColor = document.getElementById('frostingColor').value;
+            const topperColor = document.getElementById('topperColor').value;
+
+            // Update cake visualization colors
+            const cakeFilling = document.querySelector('.cake-filling');
+            const cakeFrosting = document.querySelector('.cake-frosting');
+            const cakeTopper = document.querySelector('.cake-topper');
+
+            if (cakeFilling) cakeFilling.style.backgroundColor = fillingColor;
+            if (cakeFrosting) cakeFrosting.style.backgroundColor = frostingColor;
+            if (cakeTopper) cakeTopper.style.backgroundColor = topperColor;
+        }
+
+        // Save design function
+        function saveDesign() {
+            const modal = new bootstrap.Modal(document.getElementById('saveDesignModal'));
+            modal.show();
+        }
+
+        // Save design to server
+        function saveDesignToServer() {
+            const designName = document.getElementById('designName').value;
+            const formData = new FormData(document.getElementById('customCakeForm'));
+            formData.append('design_name', designName);
+
+            fetch("{{ url_for('save_custom_design') }}", {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                const messageDiv = document.getElementById('saveMessage');
+                messageDiv.className = data.success ? 'alert alert-success' : 'alert alert-danger';
+                messageDiv.textContent = data.message;
+                messageDiv.classList.remove('d-none');
+
+                if (data.success) {
+                    setTimeout(() => {
+                        const modal = bootstrap.Modal.getInstance(document.getElementById('saveDesignModal'));
+                        modal.hide();
+                    }, 2000);
+                }
+            });
+        }
+
+        // Initialize on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            // First update sizes
+            updateSizes();
+
+            // Then toggle color sections
+            toggleColorSections();
+
+            // Then update price summary
+            updatePriceSummary();
+
+            // Then prefill if editing
+            prefillCustomization();
+
+            // Add event listeners
+            document.getElementById('shapeSelect').addEventListener('change', function() {
+                updateSizes();
+                toggleColorSections();
+                updatePriceSummary();
+            });
+
+            document.querySelectorAll('select').forEach(select => {
+                select.addEventListener('change', function() {
+                    toggleColorSections();
+                    updatePriceSummary();
+                });
+            });
+
+            // Color picker updates
+            document.querySelectorAll('input[type="color"]').forEach(picker => {
+                picker.addEventListener('input', updateCakePreview);
+            });
+
+            // Initial cake preview update
+            updateCakePreview();
+        });
+    </script>
+</body>
+</html>

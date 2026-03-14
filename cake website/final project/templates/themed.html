@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% block title %}Themed Cakes{% endblock %}
+{% block content %}
+
+<h2 style="color:var(--maroon); font-weight:900;">Themed Cakes</h2>
+<p class="text-muted">Special designer cakes for parties & events.</p>
+
+<!-- SEARCH BAR -->
+<form method="get" action="{{ url_for('themed_cakes') }}" class="mt-3 mb-4">
+  <div class="input-group" style="max-width:420px;">
+    <input type="text" name="q" value="{{ query or '' }}"
+           class="form-control" placeholder="Search themed cakes...">
+    <button class="btn btn-primary">Search</button>
+  </div>
+</form>
+
+<style>
+  .cake-card {
+      border:none;
+      cursor:pointer;
+      margin-bottom:30px;
+      transition:0.2s;
+  }
+  .cake-card:hover { transform:scale(1.03); }
+
+  .cake-img {
+      width:100%;
+      height:220px;
+      border-radius:14px;
+      object-fit:cover;
+      box-shadow:0 4px 12px rgba(0,0,0,0.12);
+  }
+</style>
+
+<!-- 4 CARDS PER ROW -->
+<div class="row mt-4">
+  {% for p in products %}
+  <div class="col-lg-3 col-md-6">  <!-- Changed to col-lg-3 for 4 per row -->
+    <a href="{{ url_for('product_details', product_id=p.product_id) }}" class="text-decoration-none">
+      <div class="cake-card">
+        <img src="{{ p.image_url }}" class="cake-img">
+        <div style="margin-top:10px; font-weight:700; color:var(--maroon);">
+          {{ p.product_name }}
+        </div>
+        <div style="color:var(--deep-gold); font-weight:800; font-size:20px;">
+          ₹{{ p.product_price }}
+        </div>
+      </div>
+    </a>
+  </div>
+  {% endfor %}
+</div>
+
+{% if products|length == 0 %}
+<div class="alert alert-warning mt-4">No themed cakes found.</div>
+{% endif %}
+
+{% endblock %}

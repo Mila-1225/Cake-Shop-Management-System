@@ -1,0 +1,158 @@
+{% extends "base.html" %}
+{% block title %}My Orders{% endblock %}
+{% block content %}
+
+<div class="container py-4">
+    <h2 class="fw-bold" style="color:var(--maroon);">My Orders</h2>
+    <p class="text-muted mb-4">Track your cake orders and delivery status</p>
+
+    {% if orders|length == 0 %}
+    <div class="text-center py-5">
+        <div class="mb-4">
+            <i class="bi bi-cart-x" style="font-size: 4rem; color: #ddd;"></i>
+        </div>
+        <h4 class="mb-3" style="color:var(--maroon);">No Orders Yet</h4>
+        <p class="text-muted mb-4">You haven't placed any orders. Start shopping for delicious cakes!</p>
+        <a href="{{ url_for('shop') }}" class="btn" style="background:var(--deep-gold); color:black; font-weight:700; padding:12px 30px;">
+            <i class="bi bi-shop me-2"></i>Browse Cakes
+        </a>
+    </div>
+    {% else %}
+
+    <!-- Sort orders by timestamp (newest first) -->
+    {% set sorted_orders = orders|sort(attribute='timestamp', reverse=true) %}
+
+    <!-- Order Stats -->
+    <div class="row mb-4">
+        <div class="col-md-3">
+            <div class="card text-center p-3 border-0 shadow-sm">
+                <h5 class="fw-bold">{{ sorted_orders|length }}</h5>
+                <small class="text-muted">Total Orders</small>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card text-center p-3 border-0 shadow-sm">
+                <h5 class="fw-bold" style="color:var(--deep-gold);">₹{{ sorted_orders|sum(attribute='total_amount') }}</h5>
+                <small class="text-muted">Total Spent</small>
+            </div>
+        </div>
+    </div>
+
+    <!-- Orders List (sorted by newest first) -->
+    {% for o in sorted_orders %}
+    <div class="card mb-3 border-0 shadow-sm" style="border-left: 4px solid
+        {% if o.order_status == 'Delivered' %}#28a745
+        {% elif o.order_status == 'Baking' %}#ffc107
+        {% elif o.order_status == 'Out for Delivery' %}#17a2b8
+        {% else %}#6b1717{% endif %};">
+
+        <div class="card-body">
+            <!-- New Order Badge (for orders placed in last 7 days) -->
+            {% if o.timestamp and ((now|string)[:10]|replace('-', '')|int) - (o.timestamp[:10]|replace('-', '')|int) < 8 %}
+
+            {% endif %}
+
+            <div class="row align-items-center">
+                <div class="col-md-3">
+                    <div class="d-flex align-items-center">
+                        <div class="me-3">
+                            <i class="bi bi-box-seam" style="font-size: 2rem; color: var(--maroon);"></i>
+                        </div>
+                        <div>
+                            <h6 class="fw-bold mb-0" style="color:var(--maroon);">ORDER #{{ o.order_id }}</h6>
+                            <small class="text-muted">
+                                <i class="bi bi-calendar me-1"></i>{{ o.timestamp[:10] }}
+                                <i class="bi bi-clock ms-2 me-1"></i>{{ o.timestamp[11:16] }}
+                            </small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div>
+                        <small class="text-muted">Delivery Date</small>
+                        <h6 class="fw-bold mb-0">{{ o.delivery_date or 'Not set' }}</h6>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div>
+                        <small class="text-muted">Status</small>
+                        <div>
+                            <span class="badge rounded-pill
+                                {% if o.order_status == 'Delivered' %}bg-success
+                                {% elif o.order_status == 'Baking' %}bg-warning text-dark
+                                {% elif o.order_status == 'Out for Delivery' %}bg-info
+                                {% else %}bg-secondary{% endif %}
+                                px-3 py-2">
+                                {{ o.order_status }}
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="text-end">
+                        <h5 class="fw-bold" style="color:var(--deep-gold);">₹{{ o.total_amount }}</h5>
+                        <a href="{{ url_for('order_detail', order_id=o.order_id) }}"
+                           class="btn btn-sm"
+                           style="background:var(--maroon); color:white; font-weight:600;">
+                            View Details <i class="bi bi-arrow-right ms-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Progress Bar -->
+            <div class="mt-3">
+                <small class="text-muted d-block mb-2">Order Progress</small>
+                <div class="progress" style="height: 6px; border-radius: 3px;">
+                    <div class="progress-bar
+                        {% if o.order_status == 'Pending' %}bg-secondary
+                        {% elif o.order_status == 'Baking' %}bg-warning
+                        {% elif o.order_status == 'Out for Delivery' %}bg-info
+                        {% else %}bg-success{% endif %}"
+                        style="width:
+                        {% if o.order_status == 'Pending' %}25%
+                        {% elif o.order_status == 'Baking' %}50%
+                        {% elif o.order_status == 'Out for Delivery' %}75%
+                        {% else %}100%{% endif %};">
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between mt-2">
+                    <small>Ordered</small>
+                    <small>Preparing</small>
+                    <small>On the Way</small>
+                    <small>Delivered</small>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+
+    {% endif %}
+</div>
+
+<style>
+    .card:hover {
+        transform: translateY(-2px);
+        transition: transform 0.2s ease;
+    }
+
+    .badge {
+        font-size: 0.8rem;
+        font-weight: 600;
+    }
+
+    .progress {
+        background-color: #e9ecef;
+    }
+
+    /* Highlight newest order */
+    .card:first-child {
+        border: 2px solid var(--deep-gold) !important;
+        background-color: #fffdf8;
+    }
+</style>
+
+{% endblock %}

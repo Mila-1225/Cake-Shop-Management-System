@@ -1,0 +1,121 @@
+/* Custom Cake Builder Styles */
+
+/* Color picker styling */
+.form-control-color {
+    width: 60px;
+    height: 60px;
+    padding: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Cake visualization */
+.cake-visual {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.cake-base {
+    position: absolute;
+    width: 80%;
+    height: 60%;
+    bottom: 0;
+    left: 10%;
+    background: linear-gradient(135deg, #d4a574 0%, #b8860b 100%);
+    border-radius: 15px 15px 5px 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.cake-filling {
+    position: absolute;
+    width: 70%;
+    height: 30%;
+    bottom: 30%;
+    left: 15%;
+    background: linear-gradient(135deg, #ff69b4 0%, #ff1493 100%);
+    border-radius: 10px;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.cake-frosting {
+    position: absolute;
+    width: 85%;
+    height: 40%;
+    bottom: 40%;
+    left: 7.5%;
+    background: linear-gradient(135deg, #fff0f5 0%, #ffe4e1 100%);
+    border-radius: 12px 12px 3px 3px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+.cake-topper {
+    position: absolute;
+    width: 30%;
+    height: 20%;
+    top: 10%;
+    left: 35%;
+    background: linear-gradient(135deg, #ffd700 0%, #ffa500 100%);
+    border-radius: 50% 50% 0 0;
+}
+
+/* Price summary styling */
+#priceSummary div {
+padding: 5px 0;
+border-bottom: 1px solid #eee;
+}
+
+#priceSummary div:last-child {
+border-bottom: none;
+}
+
+/* Card hover effects */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Step indicator */
+.card-header {
+    position: relative;
+    padding-left: 50px;
+}
+
+.card-header::before {
+    content: attr(data-step);
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .cake-visual {
+        width: 150px;
+        height: 150px;
+    }
+
+    .card-header {
+        padding-left: 40px;
+    }
+
+    .card-header::before {
+        width: 25px;
+        height: 25px;
+        left: 10px;
+    }
+}

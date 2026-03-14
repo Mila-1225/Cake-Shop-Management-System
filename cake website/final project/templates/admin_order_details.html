@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% block title %}Order #{{ order.order_id }}{% endblock %}
+{% block content %}
+
+<h3 style="color:var(--maroon)">Order #{{ order.order_id }}</h3>
+
+<div class="row mt-4">
+
+  <!-- LEFT SIDE -->
+  <div class="col-md-6">
+    <div class="p-3 border rounded bg-white shadow-sm">
+
+      <h5 class="mb-1">Customer</h5>
+      <p class="mb-2">
+        {{ user.username if user else 'Guest' }}<br>
+        {{ order.address }}<br>
+        {{ order.phone }}
+      </p>
+
+      <h5>Items</h5>
+      <ul>
+        {% for it in items %}
+        <li>{{ it.product_name }} × {{ it.quantity }}</li>
+        {% endfor %}
+      </ul>
+
+      <p><strong>Total:</strong> ₹{{ order.total_amount }}</p>
+      <p><strong>Delivery:</strong> {{ order.delivery_date }} {{ order.delivery_time }}</p>
+
+      {% if order.photo_url %}
+      <p><strong>Uploaded Cake Reference:</strong></p>
+      <img src="{{ order.photo_url }}" style="max-width:250px" class="rounded shadow">
+      {% endif %}
+    </div>
+  </div>
+
+  <!-- RIGHT SIDE -->
+  <div class="col-md-6">
+    <div class="p-3 border rounded bg-white shadow-sm">
+
+      <h5>Update Status</h5>
+
+      <form method="post">
+        <select name="order_status" class="form-select mb-3">
+          <option {% if order.order_status=='Pending' %}selected{% endif %}>Pending</option>
+          <option {% if order.order_status=='Baking' %}selected{% endif %}>Baking</option>
+          <option {% if order.order_status=='Out for Delivery' %}selected{% endif %}>Out for Delivery</option>
+          <option {% if order.order_status=='Delivered' %}selected{% endif %}>Delivered</option>
+        </select>
+
+        <button class="btn btn-maroon w-100">Save</button>
+      </form>
+
+    </div>
+  </div>
+
+</div>
+
+{% endblock %}

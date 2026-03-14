@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+{% block title %}Admin Add Product{% endblock %}
+{% block content %}
+
+<h3 style="color:var(--maroon); margin-bottom:20px;">Add New Cake (Admin)</h3>
+
+<form action="{{ url_for('admin_add_product') }}" method="post" enctype="multipart/form-data"
+      class="card p-4" style="max-width:650px;background:rgba(255,255,255,0.09);backdrop-filter:blur(6px);">
+
+  <!-- PRODUCT NAME -->
+  <div class="mb-3">
+    <label class="form-label">Cake Name</label>
+    <input name="product_name" class="form-control" required>
+  </div>
+
+  <!-- PRICE -->
+  <div class="mb-3">
+    <label class="form-label">Price (₹)</label>
+    <input name="product_price" class="form-control" required>
+  </div>
+
+  <!-- DESCRIPTION -->
+  <div class="mb-3">
+    <label class="form-label">Description</label>
+    <textarea name="description" class="form-control" rows="3"></textarea>
+  </div>
+
+  <!-- MAIN IMAGE -->
+  <div class="mb-3">
+    <label class="form-label">Main Product Image</label>
+    <input type="file" name="file" accept="image/*" class="form-control" required onchange="previewMain(event)">
+    <img id="mainPreview" style="max-width:180px;margin-top:10px;display:none;border-radius:8px;">
+  </div>
+
+  <!-- EXTRA IMAGES -->
+  <div class="mb-3">
+    <label class="form-label">Extra Images (Optional)</label>
+    <input type="file" name="extra_images" accept="image/*" multiple class="form-control" onchange="previewExtra(event)">
+    
+    <div id="extraPreviewBox" style="display:flex;gap:10px;margin-top:10px;flex-wrap:wrap;"></div>
+  </div>
+
+  <button class="btn btn-primary mt-3">Add Product</button>
+</form>
+
+
+<!-- ==================== JS PREVIEW SCRIPTS ==================== -->
+<script>
+function previewMain(event) {
+    const img = document.getElementById("mainPreview");
+    img.src = URL.createObjectURL(event.target.files[0]);
+    img.style.display = "block";
+}
+
+function previewExtra(event) {
+    const box = document.getElementById("extraPreviewBox");
+    box.innerHTML = "";
+
+    for (let file of event.target.files) {
+        let img = document.createElement("img");
+        img.src = URL.createObjectURL(file);
+        img.style.width = "90px";
+        img.style.height = "90px";
+        img.style.objectFit = "cover";
+        img.style.borderRadius = "6px";
+        img.style.border = "1px solid #444";
+        box.appendChild(img);
+    }
+}
+</script>
+
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block title %}Baker Dashboard{% endblock %}
+{% block content %}
+<div class="d-flex justify-content-between align-items-center mb-3">
+  <h2>Baker Dashboard</h2>
+  <a class="btn btn-outline-secondary" href="{{ url_for('baker_logout') }}">Logout</a>
+</div>
+
+{% if orders %}
+  {% for o in orders %}
+    <div class="card p-3 mb-3">
+      <div class="d-flex justify-content-between">
+        <div>
+          <h5>Order #{{ o.order_id }} — <small>{{ o.order_status }}</small></h5>
+          <p class="mb-1"><b>Delivery:</b> {{ o.delivery_date or 'N/A' }} {{ o.delivery_time or '' }}</p>
+          <p class="mb-1"><b>Customer:</b> {{ o.phone or 'N/A' }}, {{ o.address or '' }}</p>
+        </div>
+        <div class="text-end">
+          <a class="btn btn-sm btn-primary" href="{{ url_for('baker_view_order', order_id=o.order_id) }}">View</a>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+{% else %}
+  <div class="alert alert-info">No orders for baking right now.</div>
+{% endif %}
+{% endblock %}

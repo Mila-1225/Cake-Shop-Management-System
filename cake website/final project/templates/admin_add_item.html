@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}Add Bakery Item{% endblock %}
+{% block content %}
+
+<h2 style="color:var(--maroon)">Add New Item</h2>
+
+<form method="post" enctype="multipart/form-data" class="mt-3" style="max-width:520px;">
+
+    <label class="fw-bold">Item Name</label>
+    <input type="text" name="item_name" required class="form-control mb-2">
+
+    <label class="fw-bold">Price</label>
+    <input type="text" name="item_price" required class="form-control mb-2">
+
+    <label class="fw-bold">Description</label>
+    <textarea name="description" class="form-control mb-2"></textarea>
+
+    <label class="fw-bold">Image</label>
+    <input type="file" name="file" accept="image/*" class="form-control mb-3">
+
+    <button class="btn btn-primary">Add Item</button>
+</form>
+
+{% endblock %}

@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>About — Parose Patisserie</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    :root {
+        --maroon:#6b1717;
+        --soft-gold:#f7d776;
+        --deep-gold:#d4af37;
+        --gold-glow:rgba(255,215,0,0.45);
+        --muted:#999;
+    }
+
+    body {
+        font-family:Inter,Arial,Helvetica,sans-serif;
+        background:#fff;
+        margin:0;
+        padding:0;
+    }
+
+    /* HERO SECTION */
+    .hero {
+        height:420px;
+        position:relative;
+        overflow:hidden;
+        color:white;
+        text-align:center;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+    .hero img {
+        position:absolute;
+        inset:0;
+        width:100%;
+        height:100%;
+        object-fit:cover;
+        z-index:-2;
+    }
+    .hero-overlay {
+        position:absolute;
+        inset:0;
+        background:linear-gradient(rgba(0,0,0,0.6), rgba(90,0,0,0.7));
+        z-index:-1;
+    }
+    .hero-title {
+        font-size:50px;
+        font-weight:900;
+        color:var(--deep-gold);
+        text-shadow:0 0 14px var(--gold-glow);
+    }
+
+    /* SECTION TITLES */
+    .section-title {
+        text-align:center;
+        font-size:34px;
+        font-weight:900;
+        color:#4a1f1f;
+        margin-top:60px;
+    }
+    .title-line {
+        width:90px;
+        height:3px;
+        background:#4a1f1f;
+        margin:12px auto 35px;
+    }
+
+    .story-text {
+        max-width:900px;
+        margin:auto;
+        font-size:18px;
+        line-height:1.7;
+        color:#5a3e3e;
+    }
+
+    /* TEAM SECTION */
+    .team-card {
+        background:white;
+        padding:20px;
+        border-radius:12px;
+        box-shadow:0 6px 18px rgba(0,0,0,0.15);
+        text-align:center;
+        transition:.3s;
+    }
+    .team-card:hover {
+        transform:translateY(-6px);
+        box-shadow:0 10px 26px rgba(0,0,0,0.25);
+    }
+    .team-card img {
+        width:150px;
+        height:150px;
+        object-fit:cover;
+        border-radius:50%;
+        margin-bottom:15px;
+        border:4px solid var(--deep-gold);
+    }
+
+    /* VALUES ICONS */
+    .value-box {
+        padding:20px;
+        text-align:center;
+    }
+
+  </style>
+</head>
+
+<body>
+
+<!-- ======================== HERO ======================== -->
+<section class="hero">
+    <img src="/static/about-hero.jpg">
+    <div class="hero-overlay"></div>
+    <div>
+        <div class="hero-title">About Parose Patisserie</div>
+        <p style="color:#ffe9b3; font-size:18px; margin-top:10px;">
+            Crafted with Passion • Inspired by Art • Made for You
+        </p>
+    </div>
+</section>
+
+
+<!-- ======================== OUR STORY ======================== -->
+<h2 class="section-title">Our Story</h2>
+<div class="title-line"></div>
+
+<p class="story-text">
+    Parose Patisserie was created with one simple vision — to bring luxury,
+    elegance, and unforgettable flavour to every celebration. What began as a
+    small home-kitchen dream has grown into a premium patisserie loved for its
+    artistry, finesse, and uncompromising quality.
+    <br><br>
+    Every cake we create carries a little piece of our heart. From hand-crafted
+    themed cakes to artisanal desserts and premium bakes, we blend creativity with
+    precision to deliver desserts that not only look breathtaking but taste divine.
+</p>
+
+
+<!-- ======================== OUR VALUES ======================== -->
+<h2 class="section-title">What We Stand For</h2>
+<div class="title-line"></div>
+
+<div class="container mt-4">
+    <div class="row">
+
+        <div class="col-md-4 value-box">
+            <img src="/static/icons/fresh.png" style="height:80px;">
+            <h4 class="mt-3" style="color:var(--maroon); font-weight:800;">Fresh Ingredients</h4>
+            <p style="color:#5a3e3e;">We bake fresh for every order using premium imported ingredients.</p>
+        </div>
+
+        <div class="col-md-4 value-box">
+            <img src="/static/icons/art.png" style="height:80px;">
+            <h4 class="mt-3" style="color:var(--maroon); font-weight:800;">Art & Craftsmanship</h4>
+            <p style="color:#5a3e3e;">Each cake is designed like a piece of art — elegant, detailed, and unique.</p>
+        </div>
+
+        <div class="col-md-4 value-box">
+            <img src="/static/icons/time.png" style="height:80px;">
+            <h4 class="mt-3" style="color:var(--maroon); font-weight:800;">On-Time Delivery</h4>
+            <p style="color:#5a3e3e;">Your special moments matter to us — punctual delivery, always.</p>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- ======================== TEAM SECTION ======================== -->
+<h2 class="section-title">Meet The Team</h2>
+<div class="title-line"></div>
+
+<div class="container">
+    <div class="row g-4 d-flex justify-content-center">
+
+        <div class="col-md-4">
+            <div class="team-card">
+                <img src="/static/team/chef1.jpg">
+                <h4 style="color:var(--maroon); font-weight:800;">Chef Aradhana</h4>
+                <p style="color:#5a3e3e;">Head Pastry Chef & Cake Artist</p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="team-card">
+                <img src="/static/team/chef2.jpg">
+                <h4 style="color:var(--maroon); font-weight:800;">Chef Nivetha</h4>
+                <p style="color:#5a3e3e;">Designer Cake Specialist</p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="team-card">
+                <img src="/static/team/chef3.jpg">
+                <h4 style="color:var(--maroon); font-weight:800;">Chef Mano</h4>
+                <p style="color:#5a3e3e;">Chocolate & Dessert Expert</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- ======================== CONTACT BUTTON ======================== -->
+<div class="text-center" style="margin:60px 0;">
+    <a href="/contact"
+       class="btn"
+       style="background:var(--deep-gold); color:black; font-weight:700; padding:14px 34px; border-radius:12px;">
+       Contact Us
+    </a>
+</div>
+
+</body>
+</html>

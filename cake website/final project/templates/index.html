@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Parose Patisserie — Luxury Cakes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    :root {
+        --maroon:#6b1717;
+        --soft-gold:#f7d776;
+        --deep-gold:#d4af37;
+        --gold-glow:rgba(255,215,0,0.45);
+        --muted:#999;
+    }
+
+    body {
+        margin:0;
+        padding:0;
+        font-family:Inter,Arial,Helvetica,sans-serif;
+        background:#fff;
+        overflow-x:hidden;
+    }
+
+    /* NAVBAR */
+    .hero-nav {
+        position:absolute;
+        top:0; right:0;
+        padding:18px 40px;
+        z-index:2000;
+        display:flex;
+        justify-content:flex-end;
+        align-items:center;
+    }
+
+    .navtxt {
+        text-decoration:none;
+        color:white !important;
+        font-weight:700;
+        font-size:17px;
+        margin-left:22px;
+        text-shadow:0 0 6px rgba(0,0,0,0.7);
+        transition:.25s ease;
+    }
+    .navtxt:hover {
+        color:var(--deep-gold) !important;
+        text-shadow:0 0 12px var(--gold-glow);
+    }
+
+    /* BURGER */
+    .burger {
+        display:none;
+        font-size:32px;
+        cursor:pointer;
+        color:white;
+        text-shadow:0 0 8px black;
+    }
+    @media(max-width:992px){
+        nav { display:none; }
+        .burger { display:block; }
+    }
+
+    /* MOBILE MENU */
+    #mobile-menu {
+        position:fixed;
+        top:0; right:-260px;
+        width:260px;
+        height:100vh;
+        background:#2b0000ee;
+        padding:40px 20px;
+        z-index:4000;
+        backdrop-filter:blur(8px);
+        transition:.35s ease-in-out;
+        border-left:2px solid var(--deep-gold);
+    }
+    #mobile-menu a {
+        display:block;
+        color:white;
+        font-weight:700;
+        margin:15px 0;
+        font-size:20px;
+        text-decoration:none;
+    }
+    #mobile-menu a:hover {
+        color:var(--deep-gold);
+        text-shadow:0 0 10px var(--gold-glow);
+    }
+    #closeMenu {
+        color:white;
+        font-size:30px;
+        margin-bottom:20px;
+        cursor:pointer;
+    }
+
+    /* HERO SECTION */
+    .hero-section {
+        height:100vh;
+        width:100%;
+        position:relative;
+        overflow:hidden;
+    }
+    .hero-section video {
+        position:absolute;
+        inset:0;
+        width:100%;
+        height:100%;
+        object-fit:cover;
+        z-index:-2;
+    }
+    .hero-overlay {
+        position:absolute;
+        inset:0;
+        background:linear-gradient(rgba(0,0,0,0.75), rgba(80,0,0,0.75));
+        z-index:-1;
+    }
+
+    @keyframes fadeSlideUp {
+        0% { opacity:0; transform:translateY(40px); }
+        100% { opacity:1; transform:translateY(0); }
+    }
+    .fade { opacity:0; animation:fadeSlideUp 1s forwards; }
+    .fade.delay { animation-delay:.3s; }
+    .fade.delay2 { animation-delay:.6s; }
+  </style>
+</head>
+
+<body>
+
+<!-- MOBILE MENU -->
+<div id="mobile-menu">
+    <div id="closeMenu">✕</div>
+    <a href="/login">Login</a>
+    <a href="/register">Register</a>
+</div>
+
+<!-- HERO AREA -->
+<section class="hero-section">
+    <!-- NAVBAR (only login/register) -->
+    <div class="hero-nav">
+        <nav>
+            <a class="navtxt" href="/login">Login</a>
+            <a class="navtxt" href="/register">Register</a>
+        </nav>
+        <div class="burger" id="burger">☰</div>
+    </div>
+
+    <!-- Background Video -->
+    <video autoplay muted loop playsinline>
+        <source src="/static/bg1.mp4" type="video/mp4">
+    </video>
+    <div class="hero-overlay"></div>
+
+    <!-- HERO CONTENT -->
+    <div style="position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); width:100%; text-align:center;">
+        <img src="/static/logo.png" class="fade" style="height:170px; filter:drop-shadow(0 0 8px black);">
+        <div class="fade delay" style="color:var(--deep-gold); font-size:52px; font-weight:900;">
+            PAROSE PATISSERIE
+        </div>
+        <div class="fade delay2" style="color:#ffe9b3; font-size:18px;">
+            Luxury • Delicacy • Perfection
+        </div>
+
+        <a href="/shop" class="btn fade delay2"
+            style="margin-top:22px; background:var(--deep-gold); color:black; padding:14px 30px; font-size:18px;">
+            Explore Cakes
+        </a>
+        <a href="/custom_cake/my_designs" class="btn fade delay2"
+            style="margin-top:22px; background:var(--deep-gold); color:black; padding:14px 30px; font-size:18px;">
+            custom_cake
+        </a>
+
+    </div>
+</section>
+
+<script>
+document.getElementById("burger").onclick = () => {
+    document.getElementById("mobile-menu").style.right = "0px";
+};
+document.getElementById("closeMenu").onclick = () => {
+    document.getElementById("mobile-menu").style.right = "-260px";
+};
+</script>
+
+</body>
+</html>

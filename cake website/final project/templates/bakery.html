@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block title %}Bakery Items{% endblock %}
+{% block content %}
+
+<h2 style="color:var(--maroon); font-weight:900;">Bakery Items</h2>
+<p class="small-muted">Freshly baked pastries, cookies, donuts, breads & more.</p>
+
+{% if products|length == 0 %}
+<div class="alert alert-warning">No bakery items added yet.</div>
+{% endif %}
+
+<style>
+  .cake-card {
+      width:280px;
+      border:none;
+      cursor:pointer;
+      transition:0.2s ease;
+      margin-bottom:30px;
+  }
+  .cake-card:hover { transform:translateY(-4px); }
+
+  .cake-img {
+      width:100%;
+      height:220px;
+      object-fit:cover;
+      border-radius:14px;
+      box-shadow:0 4px 12px rgba(0,0,0,0.12);
+  }
+</style>
+
+<div class="d-flex flex-wrap gap-4 mt-4">
+  {% for p in products %}
+  <a href="{{ url_for('product_details', product_id=p.product_id) }}" class="text-decoration-none">
+    <div class="cake-card">
+      <img src="{{ p.image_url }}" class="cake-img">
+      <div style="margin-top:10px; font-weight:700; color:var(--maroon);">
+        {{ p.product_name }}
+      </div>
+      <div style="color:var(--gold); font-weight:800; font-size:20px;">
+        ₹{{ p.product_price }}
+      </div>
+    </div>
+  </a>
+  {% endfor %}
+</div>
+
+{% endblock %}

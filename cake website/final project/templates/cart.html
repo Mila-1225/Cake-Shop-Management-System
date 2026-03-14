@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+{% block title %}Cart{% endblock %}
+{% block content %}
+<h3>Your Cart</h3>
+{% if items %}
+<table class="table">
+  <thead>
+    <tr>
+      <th>Product</th>
+      <th>Price</th>
+      <th>Qty</th>
+      <th>Subtotal</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for it in items %}
+    <tr>
+      <td>
+        <div class="d-flex align-items-center">
+          <img src="{{ it.image_url }}" style="width:80px;height:60px;object-fit:cover" class="me-3">
+          <div>
+            <strong>{{ it.product_name }}</strong>
+            {% if it.is_custom %}
+            <div class="small text-muted">
+              <i class="fas fa-star"></i> Custom Cake
+              {% if it.custom_details %}
+              <br>
+              <small>
+                <i class="fas fa-layer-group"></i> {{ it.custom_details.layer.name }} |
+                <i class="fas fa-palette"></i> {{ it.custom_details.theme.name }} Theme
+              </small>
+              {% endif %}
+            </div>
+            {% endif %}
+          </div>
+        </div>
+      </td>
+      <td>₹{{ it.product_price }}</td>
+      <td>{{ it.quantity }}</td>
+      <td>₹{{ '%.2f' % (it.product_price * it.quantity) }}</td>
+      <td>
+        <div class="btn-group" role="group">
+          <!-- Remove button -->
+          <form action="{{ url_for('remove_from_cart', product_id=it.product_id) }}" method="post" class="d-inline">
+            <button class="btn btn-sm btn-outline-danger" onclick="return confirm('Remove this item from cart?');">
+              <i class="fas fa-trash"></i> Remove
+            </button>
+          </form>
+
+          <!-- Edit button for custom cakes only -->
+          {% if it.is_custom and it.custom_id %}
+          <a href="{{ url_for('continue_custom_cake', custom_id=it.custom_id) }}"
+             class="btn btn-sm btn-outline-primary ms-2">
+            <i class="fas fa-edit"></i> Edit
+          </a>
+          {% endif %}
+        </div>
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+<div class="text-end">
+  <h4>Total: ₹{{ '%.2f' % total }}</h4>
+  <div class="mt-3">
+    <a href="{{ url_for('shop') }}" class="btn btn-outline-secondary">Continue Shopping</a>
+    <form action="{{ url_for('checkout') }}" method="get" class="d-inline">
+      <button class="btn btn-success">Proceed to Checkout</button>
+    </form>
+  </div>
+</div>
+{% else %}
+<div class="text-center py-5">
+  <i class="fas fa-shopping-cart fa-4x text-muted mb-3"></i>
+  <h4>Your cart is empty</h4>
+  <p class="text-muted">Add some delicious cakes to your cart!</p>
+  <a href="{{ url_for('shop') }}" class="btn btn-primary">Shop Now</a>
+</div>
+{% endif %}
+{% endblock %}

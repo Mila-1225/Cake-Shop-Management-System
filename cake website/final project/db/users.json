@@ -1,0 +1,66 @@
+[
+    {
+        "user_id": 1,
+        "username": "admin",
+        "password": "admin",
+        "email": "cyberjokerdemon2001@gmail.com",
+        "address": "12 injoinoduuwb dobo do adso",
+        "phone": "4567898"
+    },
+    {
+        "user_id": 2,
+        "username": "demon",
+        "password": "demon",
+        "email": "cyberjokerdemon2001@gmail.com",
+        "address": "12 injoinoduuwb dobo do .vcyhh123456",
+        "phone": "1234567890"
+    },
+    {
+        "user_id": 3,
+        "username": "ariyan",
+        "password": "joker",
+        "email": "demon@gmail.com",
+        "address": "12 injoinoduuwb dobo do adso",
+        "phone": "889889889"
+    },
+    {
+        "user_id": 4,
+        "username": "ammu",
+        "password": "ammu",
+        "email": "ammu@gmail.com",
+        "address": "hello town",
+        "phone": "66676676767"
+    },
+    {
+        "user_id": 5,
+        "username": "ammu1",
+        "password": "ammu",
+        "email": "ammu@gmail.com",
+        "address": "hello town",
+        "phone": "8778111111"
+    },
+    {
+        "user_id": 6,
+        "username": "thiru",
+        "password": "panda",
+        "email": "cyberjokerdemon2001@gmail.com",
+        "address": "palladam",
+        "phone": "07604844121"
+    },
+    {
+        "user_id": 7,
+        "username": "Ghayathri.M",
+        "password": "Ghayu@91423",
+        "email": "ghayathri.m1409@gmail.com",
+        "address": "121,subramaniya udaiyar street telungupalayam coimbatore-641039 ",
+        "phone": "9345038103"
+    },
+    {
+        "user_id": 8,
+        "username": "mila",
+        "password": "mila",
+        "email": "mila@gmil.com",
+        "address": "",
+        "phone": ""
+    }
+]

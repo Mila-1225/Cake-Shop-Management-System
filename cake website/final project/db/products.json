@@ -1,0 +1,1341 @@
+[
+    {
+        "product_id": 121,
+        "product_name": " Party Cake",
+        "product_price": " 1,245.00 ",
+        "description": "A winter wonderland, this Turquoise Party Cake is decorated with candy-cane, striped stars and white snowflakes all around. The red and white wreath piped onto with delectable buttercream will have you starting off your celebrations drooling and also staring in wonder and fascination.",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-08_11-32-29.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-08_11-32-33.png",
+            "/static/uploads/Screenshot_From_2025-12-08_11-32-39.png"
+        ]
+    },
+    {
+        "product_id": 120,
+        "product_name": " KitKat Cake",
+        "product_price": "3,500.00",
+        "description": "This kitkat cake design is something out of a dream, with gold dust and kitkats ornamenting it. This kitkat chocolate cake is for those with a sweet-tooth that just can't get enough chocolaty goodness in their lives. So have a break, have a kit kat cake!",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-08_11-32-20.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-08_11-32-24.png",
+            "/static/uploads/Screenshot_From_2025-12-08_11-32-26.png"
+        ]
+    },
+    {
+        "product_id": 119,
+        "product_name": " Rose Cake",
+        "product_price": "2,800.00 ",
+        "description": "What ingredients could be fresher in a rose cake than fresh roses themself. This fresh flowers cake, using actual flowers, is where real life meets (or should we say eats?) art in the tastiest way possible.",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-08_11-26-23.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-08_11-26-27.png"
+        ]
+    },
+    {
+        "product_id": 118,
+        "product_name": " Black & White Drip Anniversary Cake",
+        "product_price": "2,950.00 ",
+        "description": "This black and white drip anniversary cake is a minimalist masterpiece designed around elegance. If classy is what you're looking for on your day of love, look no further than this black and white drip anniversary cake with macaroons. ",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-08_11-26-13.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-08_11-26-17.png",
+            "/static/uploads/Screenshot_From_2025-12-08_11-26-20.png"
+        ]
+    },
+    {
+        "product_id": 117,
+        "product_name": " Hundred Acre Wood Cake",
+        "product_price": " 12,250.00 ",
+        "description": "This enchanting Hundred Acre Wood Cake features a charming recreation of Winnie the Pooh's beloved world. The two-tiered Winnie The Pooh Themed Cake features a delightful scene where Pooh Bear sits contentedly atop the upper tier, accompanied by his favourite honey pot, while pumpkins add a seasonal touch. ",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-08_11-21-21.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-08_11-21-25.png",
+            "/static/uploads/Screenshot_From_2025-12-08_11-21-29.png"
+        ],
+        "category": "themed"
+    },
+    {
+        "product_id": 116,
+        "product_name": " The Very Hungry Caterpillar Cake",
+        "product_price": "3,200.00 ",
+        "description": "This whimsical \u2018The Very Hungry Caterpillar\u2019 Cake brings Eric Carle's book to delectable life with its playful array of edible decorations. This single-tiered Eric Carle Cake features the story's famous protagonist arching cheerfully across the top, its segments showcasing the perfectly graduated shades of green that readers know and love. ",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-08_11-21-10.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-08_11-21-14.png",
+            "/static/uploads/Screenshot_From_2025-12-08_11-21-18.png"
+        ],
+        "category": "themed"
+    },
+    {
+        "product_id": 115,
+        "product_name": " Jessie Toy Story Cake",
+        "product_price": "3,650.00 ",
+        "description": "This Jessie Toy Story Cake captures the spirit of adventure with its Toy Story-inspired design, featuring Jessie the cowgirl as the centerpiece. The single-tiered, Pink Cowgirl Cake is dressed in a soft pink finish that provides a perfect backdrop for the celebration. ",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-08_11-15-11.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-08_11-15-15.png"
+        ],
+        "category": "themed"
+    },
+    {
+        "product_id": 114,
+        "product_name": " Hobby Theme Cake",
+        "product_price": "5,450.00 ",
+        "description": "Indulge in a delightful treat with our Hobby Theme Cake. Adorned with an artist's palette, movie reel, popcorn, and cards, this luxurious cake is perfect for those with a taste for the finer things in life. Elevate your next celebration and indulge in a slice of edible art.",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-08_11-15-00.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-08_11-15-04.png",
+            "/static/uploads/Screenshot_From_2025-12-08_11-15-07.png"
+        ],
+        "category": "themed"
+    },
+    {
+        "product_id": 113,
+        "product_name": " Pink Smash Cake",
+        "product_price": "1,425.00 ",
+        "description": "Break through all barriers with this pink smash cake. The design of this baby smash cake signifies bursting through life with zest and fervour as your little one turns a year older. This cake smash cake is a way for one to dive headfirst into their food and savour the whole experience the way a baby would.\r\n\r\nThis is a Vanilla cream cake. We are committed to zero preservatives or Harmful colours.",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-08_11-10-30.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-08_11-10-33.png",
+            "/static/uploads/Screenshot_From_2025-12-08_11-10-39.png"
+        ]
+    },
+    {
+        "product_id": 112,
+        "product_name": " Luscious Red velvet Cake",
+        "product_price": "945.00 ",
+        "description": "A luscious red velvet cake is exactly what it sounds like- layers of soft, dense crimson sponge, with delicious cream cheese piped onto it. This red velvet birthday cake is perfect for those who prefer their cakes to be light in frosting. The sponge has a mild cocoa taste, and mixed with the acidity of the buttermilk, it results in the characteristic deep dark red colour \u2013 that gives Red velvet cake its name. And the light and tangy cream cheese frosting on it provides a mouth-watering contrast to the rich and buttery celebration cake.",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-08_11-10-17.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-08_11-10-22.png",
+            "/static/uploads/Screenshot_From_2025-12-08_11-10-26.png"
+        ]
+    },
+    {
+        "product_id": 111,
+        "product_name": " Carrot Cake with cream cheese frosting",
+        "product_price": "1,200.00 ",
+        "description": "This Carrot cake is mild and pure, unpretentious yet beautiful!! Cream cheese frosting and miniature carrot decor in this carrot cake are mildly sweet and super healthy. This healthy cake is special - both inside and out. We are sure, you will rate this as the best carrot cake in Bangalore.\r\n\r\nOur carrot cake contains almond flour, please avoid if allergic to nuts.",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-08_11-07-15.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-08_11-07-19.png",
+            "/static/uploads/Screenshot_From_2025-12-08_11-07-23.png"
+        ]
+    },
+    {
+        "product_id": 110,
+        "product_name": " Coffee Walnut Cake",
+        "product_price": "1,245.00 ",
+        "description": "This coffee and chocolate infused cake will be a revelation to you just as it was for us! This subtle coffee walnut cake brings together two immensely popular flavors in a cake - Coffee and Chocolate,  (together called Mocha). Perfectly balanced between coffee, chocolate, buttercream and filled generously with the best walnuts, this mocha walnut cake is just as healthy as it looks and tastes.",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-08_11-06-55.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-08_11-07-00.png",
+            "/static/uploads/Screenshot_From_2025-12-08_11-07-03.png"
+        ]
+    },
+    {
+        "product_id": 109,
+        "product_name": " Demon Slayer Theme Cake",
+        "product_price": "4,200.00 ",
+        "description": "This Demon Slayer Theme Cake brings the dynamic world of Demon Slayer (Kimetsu no Yaiba) to life with its striking design and artistic elements. The centrepiece of this Nezuo Theme Cake features carefully placed character standees of beloved protagonists, including Tanjiro, Nezuko, and other key characters from the acclaimed anime series. ",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-08_11-02-34.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-08_11-02-37.png",
+            "/static/uploads/Screenshot_From_2025-12-08_11-02-42.png"
+        ],
+        "category": "themed"
+    },
+    {
+        "product_id": 108,
+        "product_name": " Fireworks Theme Cake",
+        "product_price": "4,950.00 ",
+        "description": " This Fireworks Theme Cake is an explosive celebration of fun and festivity, crafted with the vibrant spirit of fireworks and parties in mind. The sleek black backdrop of this Cracker Cake sets the stage for a bold and striking design, making the colourful decorations pop with energy.  ",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-08_11-02-24.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-08_11-02-27.png",
+            "/static/uploads/Screenshot_From_2025-12-08_11-02-31.png"
+        ],
+        "category": "themed"
+    },
+    {
+        "product_id": 107,
+        "product_name": " Goku Super Saiyan Cake",
+        "product_price": "3,850.00 ",
+        "description": "This Goku Super Saiyan Cake channels the power of a Super Saiyan with its striking design that would make even Shenron proud. Rising from the summit of this Dragon Ball Z Theme Cake is a masterfully crafted Goku figurine, poised in his characteristic battle-ready stance, complete with his iconic spiky black hair and classic orange and blue gi uniform. ",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-08_10-54-50.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-08_10-54-57.png",
+            "/static/uploads/Screenshot_From_2025-12-08_10-55-06.png"
+        ],
+        "category": "themed"
+    },
+    {
+        "product_id": 106,
+        "product_name": " Brown Teddy Bear Cake",
+        "product_price": "4,500.00 ",
+        "description": "This Brown Teddy Bear Cake captures the whimsical charm of childhood adventure, featuring an enchanting hot air balloon theme with adorable teddy bears as its stars. The centrepiece of this Hot Air Balloon Theme Cake showcases a delightful brown teddy bear perched atop a yellow basket, suspended beneath an ivory and chocolate-toned balloon adorned with elegant bows. ",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-08_10-54-32.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-08_10-54-43.png"
+        ],
+        "category": "themed"
+    },
+    {
+        "product_id": 105,
+        "product_name": " Pineapple Mousse Cake",
+        "product_price": "800.00",
+        "description": "Indulge in the delicate elegance of our Pineapple Mousse Cake, where light, airy mousse meets the vibrant sweetness of ripe pineapple. This refined dessert offers a perfect balance of creamy texture and tropical freshness, making it an exquisite choice for any sophisticated palate.",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-05_19-44-32.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-05_19-44-36.png"
+        ]
+    },
+    {
+        "product_id": 104,
+        "product_name": " Funfetti Vanilla Cake",
+        "product_price": " 945.00 ",
+        "description": "The funfetti vanilla cake is made of layers of soft vanilla sponge, full of rainbow sprinkles and topped with dreamy, mildly sweet cream infused with white chocolate ganache. This is our take on the confetti cake or the sprinkle cake. Fun and colorful both inside and outside, this sprinkle cake is a great choice as a birthday cake. \r\n\r\nThis funfetti sprinkle cake is one of our most colorful birthday cakes. Strips of sprinkle covered white chocolate covers the entire funfetti vanilla cake creating a pleasing visual appeal. Kids will love this funfetti or confetti cake any day. Let\u2019s have some fun with our cake this time around!",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-05_19-44-40.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-05_19-44-44.png",
+            "/static/uploads/Screenshot_From_2025-12-05_19-44-48.png"
+        ]
+    },
+    {
+        "product_id": 103,
+        "product_name": " Mango Cheesecake",
+        "product_price": "1,225.00 ",
+        "description": "Experience the delicate richness of our non-baked Mango Cheesecake, where creamy, smooth layers meet the vibrant sweetness of fresh mangoes. This sophisticated dessert offers a light, refreshing texture without baking, making it an elegant choice for those seeking a refined and effortless indulgence. Perfect for any occasion that calls for a touch of tropical luxury.",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-05_19-26-37.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-05_19-26-40.png",
+            "/static/uploads/Screenshot_From_2025-12-05_19-26-45.png"
+        ],
+        "category": "themed"
+    },
+    {
+        "product_id": 102,
+        "product_name": " Pinata Cake",
+        "product_price": "1,475.00 ",
+        "description": "The pinata cake is an incredibly fun cake to make and break. This pinata cake has a beautiful heart shaped chocolate shell with gold highlights and conceals a cake that can be any flavour of your choice. The fun is in breaking this heart pinata cake with the hammer that comes with it, and in seeing the surprise on the recipient\u2019s face.\r\n\r\nEverybody loves surprises.. The pinata cake is a great idea as a birthday cake and maybe can conceal tiny surprise gifts, candies or secret messages that are revealed only when the outer chocolate shell is broken. So go ahead and order the pinata cake for the next celebration.. Have some fun.   ",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-05_19-26-27.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-05_19-26-30.png",
+            "/static/uploads/Screenshot_From_2025-12-05_19-26-34.png"
+        ]
+    },
+    {
+        "product_id": 101,
+        "product_name": " Two Tier Construction Building Block Cake",
+        "product_price": "12,900.00 ",
+        "description": " This Two Tier Construction Building Block Cake artfully combines playful charm with refined elegance. Adorned with intricately designed building blocks around both tiers and atop the cake, it offers a sophisticated centerpiece for any birthday celebration. Perfect for those seeking a stylish yet fun cake that leaves a lasting impression. ",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-05_19-23-09.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-05_19-23-14.png",
+            "/static/uploads/Screenshot_From_2025-12-05_19-23-17.png"
+        ],
+        "category": "themed"
+    },
+    {
+        "product_id": 100,
+        "product_name": " Hot Wheels Birthday Cake",
+        "product_price": " 4,250.00",
+        "description": "This spectacular Hot Wheels Birthday Cake For Kids brings the beloved Hot Wheels world to life, capturing the essence of the iconic toy brand that has thrilled speed enthusiasts since 1968. The sleek light blue backdrop of this Toy Car Cake serves as the perfect racing sky, complemented by the signature Hot Wheels racing track design suggested by the golden ring topper - reminiscent of the brand's famous loop-the-loop stunts that have captivated children for generations.",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-05_19-22-58.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-05_19-23-02.png",
+            "/static/uploads/Screenshot_From_2025-12-05_19-23-05.png"
+        ],
+        "category": "themed"
+    },
+    {
+        "product_id": 99,
+        "product_name": " Cricket Lover Cake",
+        "product_price": "3,650.00 ",
+        "description": "This sporting masterpiece Cricket Lover Cake brings the beloved game of cricket to life through extraordinary attention to detail and playful elements. The exterior of this Cricket Bat and Ball Cake provides the perfect backdrop for a vibrant green pitch that instantly transports you to match day.  ",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-05_19-19-28.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-05_19-19-31.png",
+            "/static/uploads/Screenshot_From_2025-12-05_19-19-35.png"
+        ],
+        "category": "themed"
+    },
+    {
+        "product_id": 98,
+        "product_name": " Peonies Cake",
+        "product_price": "7,200.00 ",
+        "description": "A vision of timeless elegance, this Peonies Cake features an exquisite arrangement of fresh white blooms cascading across its smooth ivory buttercream layers. Delicate peonies and pristine roses are artfully positioned to create a natural, flowing effect, whilst rich green foliage adds depth and textural contrast to this White Bouquet Cake.",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-05_19-19-17.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-05_19-19-22.png",
+            "/static/uploads/Screenshot_From_2025-12-05_19-19-25.png"
+        ],
+        "category": "themed"
+    },
+    {
+        "product_id": 97,
+        "product_name": " Heart Shaped Pinata Cake",
+        "product_price": " 1,475.00 ",
+        "description": "The heart is considered to be the center of love, emotion and affection, where the most beautiful things that cannot be seen, are felt. So shower your loved ones with the sweetest romantic gesture that can both be seen and felt: a heart shaped pinata cake with a moist red velvet cake within.!\r\n\r\nThe chocolate shell on the outside of this heart shape pinata cake sits all pretty in pale pink and is moulded in a three dimensional manner. One side is striped with blue frosting lines and embellished with tiny, edible beads in pink, white and gold.",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-05_18-59-35.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-05_18-59-39.png"
+        ]
+    },
+    {
+        "product_id": 96,
+        "product_name": " Anniversary Red Velvet Cake with Chocolate Heart",
+        "product_price": "995.00 ",
+        "description": "A happy anniversary cake with layers of classic red velvet sponge, between delightful layers of cream cheese icing. Super moist and mildly chocolatey! This heart shape red velvet cake, makes it a special wedding anniversary cake gift for husband or wife.",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-05_18-59-20.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-05_18-59-24.png",
+            "/static/uploads/Screenshot_From_2025-12-05_18-59-28.png"
+        ]
+    },
+    {
+        "product_id": 95,
+        "product_name": " Raspberry Vanilla Cake",
+        "product_price": " 995.00 ",
+        "description": "This Raspberry cake is a unique combination of Raspberry and vanilla that will never cease to surprise you. Heavenly raspberry extravagance, on a classic vanilla sponge cake, tastefully finished with swirls of raspberry compote. A fresh burst of homemade sour-sweet raspberry fruit compote and white chocolate cream filling is that what completes this moist vanilla sponge cake.",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-05_18-52-34.png",
+        "extra_images": []
+    },
+    {
+        "product_id": 94,
+        "product_name": " Strawberry Vanilla Cake",
+        "product_price": "945.00 ",
+        "description": "This version of the classic Strawberry vanilla cake will never go out of season. Flavoured with our Strawberry compote that is made completely inhouse using real whole fruits, with zero added colours or artificial essences, this strawberry vanilla cake is as tasty and healthy as having farm fresh berries and an ideal match for a Strawberry birthday cake.",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-05_18-52-19.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-05_18-52-23.png",
+            "/static/uploads/Screenshot_From_2025-12-05_18-52-29.png"
+        ]
+    },
+    {
+        "product_id": 93,
+        "product_name": " Kimetsu No Yaiba Cake",
+        "product_price": "3,850.00 ",
+        "description": "This striking Kimetsu No Yaiba Cake transports fans straight into the world of Japan\u2019s phenomenally popular anime series with its detailed character art and symbolic imagery. The Demon Slayer Nezuko Cake features the iconic Demon Slayer emblem prominently displayed, instantly recognisable to aficionados of this cultural phenomenon that has broken records as one of Japan\u2019s most successful anime franchises.",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-05_18-49-36.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-05_18-49-43.png",
+            "/static/uploads/Screenshot_From_2025-12-05_18-49-47.png"
+        ],
+        "category": "themed"
+    },
+    {
+        "product_id": 92,
+        "product_name": " Game Controller Cake",
+        "product_price": "4,500.00 ",
+        "description": "Level up your celebration with this exhilarating Game Controller Cake that channels the adrenaline rush of epic digital quests. Bold splashes of red and blue marble across the creamy backdrop echo the vibrant visuals of arcade battles and late-night co-op sessions. Sitting proudly atop this Gamer Theme Cake is a hyper-detailed controller, every button and joystick sculpted to perfection\u2014an edible tribute to the tactile thrill of gameplay.  ",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-05_18-49-25.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-05_18-49-29.png",
+            "/static/uploads/Screenshot_From_2025-12-05_18-49-33.png"
+        ],
+        "category": "themed"
+    },
+    {
+        "product_id": 91,
+        "product_name": " Legend of Zelda Cake",
+        "product_price": "3,600.00",
+        "description": "This magnificent Legend of Zelda Cake brings the beloved Nintendo franchise to life with remarkable attention to detail. Atop this Link Zelda Cake stands an adorable rendition of Link, Hyrule\u2019s courageous hero, complete with his iconic green tunic, pointed ears, and blonde hair. The figurine clutches the Master Sword and Hylian Shield, ready to embark on his quest to defeat Ganon and save Princess Zelda, capturing the essence of the adventure that has enchanted gamers for generations.",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-05_18-42-35.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-05_18-42-39.png",
+            "/static/uploads/Screenshot_From_2025-12-05_18-42-43.png"
+        ],
+        "category": "themed"
+    },
+    {
+        "product_id": 90,
+        "product_name": " Chocolate Cake With Roses",
+        "product_price": " 4,000.00 ",
+        "description": "This opulent Chocolate Cake With Roses exudes timeless elegance with its sophisticated design and meticulous craftsmanship. The rich chocolate exterior features a striking textured pattern resembling natural wood grain, creating an organic yet refined aesthetic that draws the eye. Adorning this Gold Leaf Chocolate Cake are artfully scattered gold leaf fragments that catch the light with each subtle movement, evoking a sense of celebration and precious moments preserved in time.",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-05_18-42-28.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-05_18-42-32.png"
+        ],
+        "category": "themed"
+    },
+    {
+        "product_id": 89,
+        "product_name": " Red velvet Cake",
+        "product_price": "945.00 ",
+        "description": "The classic Red velvet cake is the endearing symbol of true love and passion. This ruby-red cake has become our \"signature dessert\" for the occasion of Valentine\u2019s day- but don\u2019t think twice about getting yourself a Red velvet birthday cake either! The sponge has a mild cocoa taste, and mixed with the acidity of the buttermilk, it results in the characteristic deep dark red colour \u2013 that gives Red velvet its name. And the light and tangy cream cheese frosting on it provides a mouth-watering contrast to the rich and buttery celebration cake. ",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-05_18-39-06.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-05_18-39-11.png"
+        ]
+    },
+    {
+        "product_id": 88,
+        "product_name": " Sacher Torte",
+        "product_price": "1,095.00 ",
+        "description": "The classic Sacher torte is a dense, delectable chocolate cake made with a layer of apricot jam in between the layers and a rich matte chocolate glazed finish on the outside. Its one of the most famous Austrian dessert delicacies and is still made following a 2-century old recipe! This Sacher cake is the perfect way to end a good hearty meal.",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-05_18-38-54.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-05_18-38-58.png",
+            "/static/uploads/Screenshot_From_2025-12-05_18-39-02.png"
+        ]
+    },
+    {
+        "product_id": 87,
+        "product_name": " Chocolate Hazelnut Nutella Cake",
+        "product_price": "995.00 ",
+        "description": "The Chocolate hazelnut cake is made of Chocolate sponges, with layers of Nutella or hazelnut cream, and are topped with chocolate-coated and plain toasted hazelnuts. Hazelnuts and chocolate get along famously and that is exactly what is used in this Chocolate hazelnut cake.",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-05_18-30-56.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-05_18-31-00.png",
+            "/static/uploads/Screenshot_From_2025-12-05_18-31-04.png"
+        ]
+    },
+    {
+        "product_id": 86,
+        "product_name": " Raspberry Chocolate Cake",
+        "product_price": " 995.00 ",
+        "description": "This Raspberry cake is our take on a brilliant flavour combination of Raspberry and chocolate that you will remember for a long time. This unique Raspberry chocolate cake will take you to a higher level of WOW! Homemade raspberry compote, between chocolate sponges, tastefully finished with a dark chocolate drip and decor...",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-05_18-30-49.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-05_18-30-52.png"
+        ]
+    },
+    {
+        "product_id": 85,
+        "product_name": " Cute Penguin Cake",
+        "product_price": "3,000.00 ",
+        "description": "This charming Cute Penguin Cake is a delightful tribute to the magic of winter, featuring an adorable penguin at its centre, wrapped snugly in a red scarf and bobble hat. The icy blue backdrop of this Blue Winter Cake evokes the serene beauty of a snow-covered landscape, while delicate white snowflakes add a touch of seasonal whimsy.  ",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-05_18-28-05.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-05_18-28-11.png"
+        ],
+        "category": "themed"
+    },
+    {
+        "product_id": 84,
+        "product_name": " Two Tier Tux Cake",
+        "product_price": " 8,500.00",
+        "description": "This sophisticated Two Tier Tux Cake exudes elegance and charm, making it a dashing choice for any gentleman\u2019s celebration. The two-tiered design of this Black Suit Cake features a striking black exterior adorned with delicate gold splatter accents, reminiscent of champagne bubbles dancing across a midnight sky.  ",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-05_18-27-27.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-05_18-27-30.png",
+            "/static/uploads/Screenshot_From_2025-12-05_18-27-34.png"
+        ],
+        "category": "themed"
+    },
+    {
+        "product_id": 83,
+        "product_name": " CEO Cake",
+        "product_price": "4,500.00 ",
+        "description": "This executive-themed CEO Cake captures the essence of corporate success with a playful wink at the business world. Sitting atop this Boss Cake is a charming figurine of a businessman in formal attire, complete with a black tuxedo and bow tie, holding what appears to be a coffee cup\u2014the quintessential companion of any dedicated professional.  ",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-05_18-24-58.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-05_18-25-01.png"
+        ],
+        "category": "themed"
+    },
+    {
+        "product_id": 82,
+        "product_name": " Dolphin Cake",
+        "product_price": "3,950.00 ",
+        "description": "This enchanting Dolphin Cake transports one to the magical depths of the ocean with its captivating design and delicate details. This Sea Themed Cake features a serene aqua-blue buttercream exterior that perfectly mimics the tranquil waters of tropical seas, complete with subtle wave-like texturing that creates movement across its surface.  ",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-05_18-24-39.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-05_18-24-43.png",
+            "/static/uploads/Screenshot_From_2025-12-05_18-24-46.png"
+        ],
+        "category": "themed"
+    },
+    {
+        "product_id": 81,
+        "product_name": " Lemon Cheesecake",
+        "product_price": "1,195.00 ",
+        "description": "Neither too sweet nor too tangy, every bite of this lemon cheesecake will taste fresh and melt in your mouth. This is yet another classic amongst the baked cheesecakes, and we do it just the way it is meant to be. The lemon cheesecake sits atop a pounded cracker crust to add a delightful nuttiness to the traditional biscuit base.",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-05_18-13-25.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-05_18-13-30.png",
+            "/static/uploads/Screenshot_From_2025-12-05_18-13-36.png"
+        ]
+    },
+    {
+        "product_id": 80,
+        "product_name": " Triple Chocolate Mousse Cake",
+        "product_price": "2,245.00 ",
+        "description": "Layers of exotic and velvety white, milk and dark Belgian chocolate mousse with artfully topped chocolate d\u00e9cor. This Triple chocolate mousse cake is dedicated to the chocoholic in you. A cold set dessert, this light Trio mousse cake will take you to different levels of chocolatey-ness with mouthful that you take.",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-05_18-13-14.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-05_18-13-17.png",
+            "/static/uploads/Screenshot_From_2025-12-05_18-13-21.png"
+        ]
+    },
+    {
+        "product_id": 79,
+        "product_name": " Passion Fruit Cheesecake",
+        "product_price": " 995.00 ",
+        "description": "Indulge in the elegant fusion of creamy richness and tropical zest with our Passion Fruit Cheesecake. This non-baked delight offers a smooth, velvety texture complemented by the vibrant, tangy notes of fresh passion fruit, creating a refined dessert experience perfect for any sophisticated palate.",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-05_18-09-44.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-05_18-09-49.png",
+            "/static/uploads/Screenshot_From_2025-12-05_18-10-00.png"
+        ]
+    },
+    {
+        "product_id": 78,
+        "product_name": "Tiramisu",
+        "product_price": "1,195.00 ",
+        "description": "The classic Tiramisu cake is a dessert fit for the royals. Rich cheesy mascarpone mousse flavoured with a dash of espresso & cocoa and layered over a coffee infused ladyfinger biscuit base. Made the way the Italians make it; this is the authentic tiramisu that is being presented to you.",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-05_18-09-17.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-05_18-09-21.png",
+            "/static/uploads/Screenshot_From_2025-12-05_18-09-38.png"
+        ]
+    },
+    {
+        "product_id": 77,
+        "product_name": " Pink and Blue Butterfly Cake",
+        "product_price": "8,000.00 ",
+        "description": "This ethereal Pink and Blue Butterfly Cake brings the delicate beauty of nature to life with its enchanting design and thoughtful details. The two-tiered design of this Butterfly Minimalist Cake features a soft buttercream base that provides the perfect neutral canvas for the whimsical elements to truly shine.  ",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-05_18-04-18.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-05_18-04-23.png",
+            "/static/uploads/Screenshot_From_2025-12-05_18-04-28.png"
+        ],
+        "category": "themed"
+    },
+    {
+        "product_id": 76,
+        "product_name": " Spiderman Venom Cake",
+        "product_price": "4,200.00 ",
+        "description": "This spectacular Spiderman Venom Cake swings into action with its dramatic design and clever comic book details. This Spiderman and Venom Birthday Cake features a sleek black exterior meticulously embossed with an intricate spiderweb pattern that radiates outward, capturing the iconic imagery associated with the beloved superhero.  ",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-05_18-04-04.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-05_18-04-08.png",
+            "/static/uploads/Screenshot_From_2025-12-05_18-04-13.png"
+        ],
+        "category": "themed"
+    },
+    {
+        "product_id": 75,
+        "product_name": " The Land Before Time Dinosaur Cake",
+        "product_price": "4,850.00 ",
+        "description": "This delightful creation roars to life with charm and nostalgia, transporting little partygoers straight into a prehistoric playground. The exterior of this The Land Before Time Dinosaur Cake is a soft cream base, acting as the perfect neutral backdrop for the jungle foliage and animated characters to pop. Towering jungle leaves in lush shades of emerald and mint wrap around the top and sides of this Dino Theme Cake, setting the scene for an adventure that feels straight out of a beloved dino tale. ",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-05_17-59-53.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-05_17-59-58.png",
+            "/static/uploads/Screenshot_From_2025-12-05_18-00-02.png"
+        ],
+        "category": "themed"
+    },
+    {
+        "product_id": 74,
+        "product_name": " Teddy Bear Cake With Stars",
+        "product_price": "5,500.00 ",
+        "description": "This enchanting woodland-themed Teddy Bear Cake With Stars transports little ones to a dreamy celestial wonderland, where adorable animal friends gather to celebrate a special occasion. The elegant ivory backdrop of this Teddy Squirrel Cake provides the perfect canvas for a magical scene that seems straight out of a cherished bedtime story.  ",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-05_17-59-23.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-05_17-59-37.png",
+            "/static/uploads/Screenshot_From_2025-12-05_17-59-49.png"
+        ],
+        "category": "themed"
+    },
+    {
+        "product_id": 73,
+        "product_name": " Blueberry Cheesecake",
+        "product_price": "1,095.00 ",
+        "description": "Laid on a crunchy base, this no bake Blueberry cheesecake is to be savored cold. The heavy and dense texture of this blueberry cheesecake will feel extremely smooth and rich in your mouth. This blueberry cheesecake is made with mascarpone and cream cheese and has real blueberries.",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-05_12-11-11.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-05_12-11-16.png"
+        ]
+    },
+    {
+        "product_id": 72,
+        "product_name": " Belgian Chocolate Mousse Cake",
+        "product_price": "1,095.00 ",
+        "description": "Silky couverture Belgian chocolate mousse finished with tasteful dark chocolate decor. This chocolate mousse cake is dedicated to the chocoholic in you. This choco mousse cake uses Belgium dark chocolate and cream and is a cold set dessert.",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-05_12-11-03.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-05_12-11-07.png"
+        ]
+    },
+    {
+        "product_id": 71,
+        "product_name": " Buttercream Chocolate Cake",
+        "product_price": "1,095.00 ",
+        "description": "This chocolate cake has a unique Belgian chocolate buttercream frosting nestled between succulent yet dense layers of chocolate sponge. Adorned with splashes of gold and mini chocolate domes, this chocolate birthday cake offers a premium look and an exquisite taste.\r\n\r\nThis premium Chocolate cake has a rich texture of buttercream and milk chocolate! This chocolate birthday cake has chocolate sponges, layered with a chocolate ganache cream frosting and then covered with Italian buttercream. A combination made in heaven \u2013 and definitely the best chocolate cake.",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-05_12-06-19.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-05_12-06-23.png",
+            "/static/uploads/Screenshot_From_2025-12-05_12-06-27.png"
+        ]
+    },
+    {
+        "product_id": 70,
+        "product_name": " New York Cheesecake",
+        "product_price": "1,245.00 ",
+        "description": "The classic New York cheesecake at liliyum respects the tradition and the recipe. It is a baked cheesecake or cream cheese dessert that rests on a pounded and powdery biscuit base. This classic New York cheesecake can be topped with your choice of compote \u2013 strawberry, raspberry, blueberry or mixed berry \u2013 which are fully made inhouse. ",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-05_12-06-08.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-05_12-06-11.png",
+            "/static/uploads/Screenshot_From_2025-12-05_12-06-16.png"
+        ]
+    },
+    {
+        "product_id": 69,
+        "product_name": " Princess Swan Cake",
+        "product_price": " 8,950.00 ",
+        "description": "This enchanting Princess Swan Cake showcases delicate craftsmanship and charming details perfect for a little one\u2019s special celebration. This Pink Swan Cake features an adorable figure of a little girl with rosy cheeks and a sweet smile, perched atop a pristine pink and gold base. Her pleated pink dress with intricate ruffles demonstrates exceptional attention to detail, while her white top and gold shoes add a touch of elegance to this whimsical design.",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-05_12-03-16.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-05_12-03-19.png",
+            "/static/uploads/Screenshot_From_2025-12-05_12-03-23.png"
+        ],
+        "category": "themed"
+    },
+    {
+        "product_id": 68,
+        "product_name": " Green Scooby Doo Cake",
+        "product_price": "3,850.00 ",
+        "description": "This nostalgic mystery-solving Green Scooby Doo Cake brings the beloved cartoon detective gang to life with vibrant colours and playful details perfect for fans both young and old. The striking lime green Scooby Cake serves as the perfect backdrop for this animated adventure, immediately evoking the whimsical and slightly spooky atmosphere that has captivated audiences since the show\u2019s debut in 1969.  ",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-05_12-03-06.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-05_12-03-09.png",
+            "/static/uploads/Screenshot_From_2025-12-05_12-03-12.png"
+        ],
+        "category": "themed"
+    },
+    {
+        "product_id": 67,
+        "product_name": " Doctor's Bridal Shower Cake",
+        "product_price": "3,650.00",
+        "description": "This Doctor's bridal shower Cake celebrates the smart, bride-to-be\u2019s upcoming journey into matrimony with sophisticated charm and thoughtful symbolism. This circular Pink Bachelorette Cake features a delicate blush pink background\u2014a colour traditionally associated with romance, tenderness, and new beginnings.  ",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-05_12-00-58.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-05_12-01-02.png"
+        ],
+        "category": "themed"
+    },
+    {
+        "product_id": 66,
+        "product_name": " Black and White Floral Cake",
+        "product_price": " 7,750.00 ",
+        "description": "This elegant two-tiered Black and White Floral Cake showcases a sophisticated contrast of cream and black, perfect for a wedding or birthday celebration with modern flair. The top tier features a creamy white buttercream with horizontal texture lines, delicately adorned with flecks of gold leaf that catch the light and add a touch of luxury to this Flower Garden Cake.  ",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-05_11-59-25.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-05_11-59-30.png",
+            "/static/uploads/Screenshot_From_2025-12-05_11-59-34.png"
+        ],
+        "category": "themed"
+    },
+    {
+        "product_id": 65,
+        "product_name": " Rainbow Cake",
+        "product_price": "1,895.00",
+        "description": "This Rainbow cake would be the ultimate showstopper at any party. A stunning cake made with the seven distinct colors of the rainbow. The soft moist colorful layers of vanilla sponges go superbly with the mildly sweet cream cheese that is used inside this colorful cake. This rainbow cake is the best suited as a kids birthday cake",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-05_11-55-13.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-05_11-55-16.png",
+            "/static/uploads/Screenshot_From_2025-12-05_11-55-21.png"
+        ]
+    },
+    {
+        "product_id": 64,
+        "product_name": " Floral Heart Shape Cake",
+        "product_price": "1,450.00 Variants",
+        "description": "Love is in the air and  it's time to turn on your heart eyes for this heart shape cake. This romantic cake is a thing of beauty which we hope will go from the eye of the beholder to his/her home!\r\n\r\nHere's a heart shape birthday cake that is designed in size and presentation to resemble a heart-shaped gift box. Velvet-like, pale-pink buttercream is what the base of this heart shape cake design is frosted with and showcases vertical partitions textured down the sides.",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-05_11-53-41.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-05_11-53-46.png",
+            "/static/uploads/Screenshot_From_2025-12-05_11-53-52.png"
+        ]
+    },
+    {
+        "product_id": 63,
+        "product_name": " Irish Coffee Cake",
+        "product_price": "995.00 ",
+        "description": "A delicious and moist chocolate cake forms the body of this Irish coffee cake, which comes layered with a coffee infused cream. The chocolate swirls along with gold-painted coffee beans adorn the top of this Irish coffee cake like a crown. If you were wondering, where can I find the most authentic Irish coffee cake near me? Look no further, this Irish coffee cake will have your tastebuds light up in pleasure.",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-05_11-42-02.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-05_11-42-12.png",
+            "/static/uploads/Screenshot_From_2025-12-05_11-42-16.png"
+        ]
+    },
+    {
+        "product_id": 62,
+        "product_name": " Yellow Ombre Cake",
+        "product_price": "3,000.00 ",
+        "description": "This yellow ombre cake is here to add a little cheer and a lot of flavour to your celebrations. With the abstract artistic aesthetic of this yellow ombre birthday cake design, you might be left wondering whether to take a bite of this piece or preserve it in a museum.",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-05_11-41-54.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-05_11-42-00.png"
+        ]
+    },
+    {
+        "product_id": 61,
+        "product_name": " Sun Flower Cake With Rainbow",
+        "product_price": "3,700.00 ",
+        "description": "This enchanting Sun Flower Cake with Rainbow brings together the magic of celestial elements in a delightful spring-inspired design. The showstopper is undoubtedly the serene sunshine topper with its peaceful sleeping expression, rosy cheeks, and adorable pink bow, projecting a gentle femininity that crowns this Rainbow Sun Cake. ",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-04_19-05-28.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-04_19-05-44.png",
+            "/static/uploads/Screenshot_From_2025-12-04_19-05-52.png"
+        ],
+        "category": "themed"
+    },
+    {
+        "product_id": 60,
+        "product_name": " Apple Theme Cake",
+        "product_price": "3,250.00 ",
+        "description": "This charming Apple Theme Cake celebrates a special birthday with playful design elements that pay homage to classic childhood motifs. Perched atop is a magnificently crafted  apple, complete with realistic texturing and a single green leaf, serving as the crowning glory of this Fruit Theme Cake.  ",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-04_19-04-59.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-04_19-05-09.png",
+            "/static/uploads/Screenshot_From_2025-12-04_19-05-17.png"
+        ],
+        "category": "themed"
+    },
+    {
+        "product_id": 59,
+        "product_name": " Celestial Unicorn Cake",
+        "product_price": "3,850.00 ",
+        "description": "This enchanting Celestial Unicorn Cake brings magical whimsy to life with its delightful pastel palette and fantastical design elements. This Unicorn and Rainbow Cake features a stunning ombr\u00e9 effect, transitioning seamlessly from soft blue at the base, through cheerful yellow, to delicate pink at the top\u2014creating a dreamy rainbow backdrop that perfectly complements its mythical theme.  ",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-04_19-01-20.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-04_19-01-25.png"
+        ],
+        "category": "themed"
+    },
+    {
+        "product_id": 58,
+        "product_name": " Paw Patrol Firetruck Cake",
+        "product_price": "4,650.00 ",
+        "description": "This delightful Paw Patrol Firetruck Cake celebrates childhood imagination with its charming rescue theme. The round Mighty Pups Cake features adorable figurines of two popular Paw Patrol puppy characters\u2014one sporting a red firefighter outfit with matching helmet and another in police attire sitting alongside.  ",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-04_19-01-08.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-04_19-01-12.png",
+            "/static/uploads/Screenshot_From_2025-12-04_19-01-16.png"
+        ],
+        "category": "themed"
+    },
+    {
+        "product_id": 57,
+        "product_name": " Fruits Cake",
+        "product_price": "3,500.00 ",
+        "description": "This fruits cake forms the perfect combination of art and nature. And what could be more fruitful for a lover of nature's dessert than a fruit theme cake?\r\n\r\nThis fruit art cake showcases an artistic, simplistic and minimalistic design. With a white base and a berrylicious asymmetrical drip pattern on one side, this fruit art cake is a tropical treat.",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-04_18-57-19.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-04_18-57-22.png",
+            "/static/uploads/Screenshot_From_2025-12-04_18-57-27.png"
+        ]
+    },
+    {
+        "product_id": 56,
+        "product_name": " Green Floral Macaron Cake",
+        "product_price": "3,650.00 ",
+        "description": "This green floral cake with macarons creates a beautiful abstract garden for the nature lovers with a sweet tooth.\r\n\r\nThis macaron cake design features a pastel green base acting as a stand-in for grass. Fresh white roses are embedded into the side of this green floral cake with macarons adding to the naturesque theme of this piece.",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-04_18-57-04.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-04_18-57-10.png"
+        ]
+    },
+    {
+        "product_id": 55,
+        "product_name": " Simple Black And Gold Birthday Cake",
+        "product_price": "3,600.00 ",
+        "description": "What's a better gift for your wife on her birthday than chocolate and flowers? How about a simple black and gold birthday cake that combines the best of both worlds? This gold flower cake is the best way to her heart and her stomach.\r\n\r\nBasically a floral chocolate cake, this design comes with a simple yet tall chocolate base, embellished with black and gold baubles and a gold spray at the base, adding to the artistic aesthetic.",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-04_18-54-06.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-04_18-54-11.png",
+            "/static/uploads/Screenshot_From_2025-12-04_18-54-16.png"
+        ]
+    },
+    {
+        "product_id": 54,
+        "product_name": " Ombre Purple Butterfly Cake",
+        "product_price": "3,250.00 ",
+        "description": "Introducing the exquisite Purple butterfly cake, a true masterpiece that will make your wife's birthday celebration an unforgettable experience. This stunning three layer cake is not just a dessert; it is a symbol of love, beauty, and elegance.",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-04_18-53-58.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-04_18-54-03.png"
+        ]
+    },
+    {
+        "product_id": 53,
+        "product_name": " Rhino Cake",
+        "product_price": "6,500.00 ",
+        "description": "This delightful safari-themed Rhino Cake brings the wild wonders of Africa straight to your celebration table. Four adorable jungle friends take centre stage atop this vibrant Animal Jungle Theme Cake, each crafted with meticulous attention to detail that captures their unique characteristics.\r\n\r\nThe majestic lion, complete with a flowing mane and regal crown, represents courage and leadership\u2014qualities often celebrated in African folklore where lions are revered as kings of the savannah.",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-04_18-50-04.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-04_18-50-08.png",
+            "/static/uploads/Screenshot_From_2025-12-04_18-50-14.png"
+        ],
+        "category": "themed"
+    },
+    {
+        "product_id": 52,
+        "product_name": " Purple Princess Cake",
+        "product_price": " 7,500.00 ",
+        "description": "This enchanting two-tier Purple Princess Cake captures the essence of fairytale elegance with its stunning princess-themed design.\r\n\r\nThe crowning glory of this White and Purple Drip Cake is a beautifully crafted princess figure, adorned in a flowing purple gown that cascades gracefully around her form. Her dark hair is elegantly styled with delicate floral accents, embodying the timeless appeal of classic fairy tale heroines who have captured hearts for generations.",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-04_18-49-57.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-04_18-50-00.png"
+        ],
+        "category": "themed"
+    },
+    {
+        "product_id": 51,
+        "product_name": " Hand Painted Flower Cake",
+        "product_price": "4,000.00 ",
+        "description": "This Hand Painted Flower Cake is an ode to quiet romance and timeless grace, perfect for a celebration where elegance does all the talking. The delicate showpiece of this Buttercream Rose Cake is the pair of intricately crafted pink blooms that crown the top\u2014resembling full-bloom peonies or wild garden roses caught mid-blush.",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-04_18-46-44.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-04_18-46-49.png"
+        ],
+        "category": "themed"
+    },
+    {
+        "product_id": 50,
+        "product_name": " Cinnamoroll Birthday Cake",
+        "product_price": " 3,900.00 ",
+        "description": "This Cinnamoroll Birthday Cake is a pastel dream come to life, crafted for the little one who adores all things cute, cuddly, and cloud-like. The centrepiece of this Cinnamoroll Sanrio Cake is an edible figurine of Cinnamoroll himself, perched sweetly at the top with his floppy ears, gentle blush, and bright blue eyes capturing that signature Sanrio charm. Behind him, festive signs and motifs featuring cupcakes, balloons, and mini Cinnamorolls bring a party atmosphere that feels straight out of a cartoon episode.",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-04_18-46-53.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-04_18-47-00.png"
+        ],
+        "category": "themed"
+    },
+    {
+        "product_id": 49,
+        "product_name": "Purple Butterfly Cake",
+        "product_price": " 3,250.00",
+        "description": "This purple butterfly cake features a luscious cream base, adorned with delightful purple buttercream smudges that add a touch of whimsy. The real showstopper, however, lies in the realistic purple and gold butterflies that gracefully perch all over this purple and white butterfly cake design.",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-04_18-43-01.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-04_18-43-07.png",
+            "/static/uploads/Screenshot_From_2025-12-04_18-43-13.png"
+        ]
+    },
+    {
+        "product_id": 48,
+        "product_name": "Colourful Birthday Cake",
+        "product_price": "1,275.00",
+        "description": "Indulge in a truly special celebration with our Colourful Birthday Cake. Immerse yourself in a vibrant, rainbow-colored treat that will make your birthday truly unforgettable. Let our Rainbow themed Birthday Cake add a touch of art and luxury to your festivities. ",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-04_18-42-47.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-04_18-42-51.png",
+            "/static/uploads/Screenshot_From_2025-12-04_18-42-54.png"
+        ]
+    },
+    {
+        "product_id": 47,
+        "product_name": "Line Art Birthday Cake",
+        "product_price": "2,950.00 ",
+        "description": " Indulge in the sophistication of our Line Art Birthday Cake. With its intricate line art design, this silhouette cake is perfect for any special occasion. Adorned with a delicate flower head wreath, it's the perfect gift for your wife, girlfriend, or mother. Elevate your celebration with this luxurious and exclusive cake. ",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-04_18-40-05.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-04_18-40-12.png"
+        ]
+    },
+    {
+        "product_id": 46,
+        "product_name": "Pink Butterfly Cake",
+        "product_price": "1,550.00 ",
+        "description": "Here's a magical pink butterfly cake for a magical birthday! Our hope for this pink butterfly birthday cake is that it helps you take flight in all the opportunities this new year presents you.\r\n\r\nButterflies are the ideal symbols of a birthday or a new year as apart from their aesthetic appearance, they symbolise change, transition, hope and life so if you were looking for ideal pink butterfly cake designs to make your birthday cake for mom or birthday cake for wife more special, look no further, we at Liliyum Patisserie have already crafted the perfect birthday cake for her.",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-04_18-39-52.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-04_18-39-57.png",
+            "/static/uploads/Screenshot_From_2025-12-04_18-40-01.png"
+        ]
+    },
+    {
+        "product_id": 45,
+        "product_name": "Dr. Binocs Cake",
+        "product_price": "3,800.00 ",
+        "description": "This Dr. Binocs Cake is a quirky explosion of colour, curiosity, and all things science, perfect for the inquisitive little mind who wants answers to everything.\r\n\r\nThe highlight of this Peekaboo Cake is the bold edible cut-out of Dr. Binocs himself, perched with wide-eyed excitement among a forest of bubbling beakers and test tubes. From vibrant green potions to bright blue flasks, each topper captures the whimsy and wonder of at-home experiments and animated learning.",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-04_18-29-42.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-04_18-30-08.png"
+        ],
+        "category": "themed"
+    },
+    {
+        "product_id": 44,
+        "product_name": "Bebefinn Cake",
+        "product_price": "4,200.00 ",
+        "description": "This Bebefinn Cake is a burst of undersea joy designed for little ones who light up at the first beat of a catchy tune. Sitting right at the top of this Yellow Baby Shark Cake is an adorable figure of Bebefinn, clutching his cheerful yellow shark pal and beaming with first-birthday wonder. His wide eyes and tiny paws give the whole piece a playful, animated charm\u2014as if he\u2019s just paused mid-dance from a deep-sea singalong.",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-04_18-29-28.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-04_18-29-32.png",
+            "/static/uploads/Screenshot_From_2025-12-04_18-29-37.png"
+        ],
+        "category": "themed"
+    },
+    {
+        "product_id": 43,
+        "product_name": "The Fox and The Hedgehog Cake",
+        "product_price": "3,900.00 ",
+        "description": "This Fox and The Hedgehog Cake is a charming woodland welcome, perfect for new beginnings, birthdays, or any moment that calls for a gentle touch of magic. Atop this Woodland Cake, a peacefully sleeping fox curls up beside a spiky little hedgehog, both nestled among leaves and vibrant red mushrooms with sugary white spots. Their miniature world feels lifted from the pages of a children\u2019s storybook\u2014serene, safe, and full of quiet wonder.",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-04_18-26-12.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-04_18-26-20.png",
+            "/static/uploads/Screenshot_From_2025-12-04_18-26-25.png"
+        ],
+        "category": "themed"
+    },
+    {
+        "product_id": 42,
+        "product_name": "Wild Animals Cake",
+        "product_price": "5,500.00 ",
+        "description": "This Wild Animals Cake is a jungle jamboree, bursting with personality and charm for your little adventurer\u2019s big day. \r\n\r\nAt the top of this Tropical Jungle Cake sits a golden lion with a wide-eyed, lovable expression, surrounded by monstera leaves, ready to roar in another year of fun. Down below, an adorable gathering of animal friends\u2014including a shy elephant, playful zebra, and curious giraffe\u2014bring the wild right to the party table.",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-04_18-26-03.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-04_18-26-08.png"
+        ],
+        "category": "themed"
+    },
+    {
+        "product_id": 41,
+        "product_name": "Chocolate Almond Cake",
+        "product_price": "1,250.00 ",
+        "description": "Indulge in the luxurious flavors of our Chocolate Almond Cake. With layers of decadent chocolate sponge, rich chocolate buttercream, and almond pralines for a delightful crunch, this cake is truly a masterpiece. The addition of creamy almond butter between each layer takes it to the next level of sophistication. Treat yourself to this exclusive dessert.",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-04_18-22-44.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-04_18-22-50.png",
+            "/static/uploads/Screenshot_From_2025-12-04_18-22-57.png"
+        ]
+    },
+    {
+        "product_id": 40,
+        "product_name": "Chocolate Truffle Cake",
+        "product_price": "945.00 ",
+        "description": "This is the all-time favorite chocolate ganache cake or the chocolate truffle cake, which has layers of moist and dark chocolate ganache in between, a glossy chocolate cover on top and is decorated with dark chocolate piping and drips. Everyone loves the chocolate truffle cake, for occasions like birthdays and anniversaries.\r\n\r\nAn edible masterpiece in chocolate, this dark Chocolate truffle cake can be the perfect finale to a very special dinner or the kick-off to a great celebration. Layers of dark chocolate cake alternate with rich ganache and is then coated with a shiny glaze. This chocolate ganache cake is a chocolate lover\u2019s dream come true.",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-04_18-22-37.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-04_18-22-40.png"
+        ]
+    },
+    {
+        "product_id": 39,
+        "product_name": " Brownie Cake",
+        "product_price": "700.00 ",
+        "description": "We have heard that no one can have enough of a good brownie. This is the ultimate brownie cake. The all-time favorite Chocolate brownie is now available in a round cake form that elevates it to a celebration cake status. Add healthy walnuts to this walnut brownie cake for the extra bite and nuttiness. This can be a perfect birthday cake brownies for those who don't like cream and icing on their cakes.\r\n\r\nThick, dark, and gooey-sweet \u2013 every bite of this chocolate brownie cake is to be enjoyed and savored. This walnut brownie cake is also ideal as a healthy tea-time snack. These are guaranteed to melt a loved one's knees! Brownie is always the answer. Who cares what the question is!",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-04_18-09-31.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-04_18-09-38.png",
+            "/static/uploads/Screenshot_From_2025-12-04_18-09-43.png"
+        ]
+    },
+    {
+        "product_id": 38,
+        "product_name": "Happy Anniversary Cake",
+        "product_price": "1,450.00 ",
+        "description": "Pink and white roses on this Happy Anniversary Cake symbolize purity, love and affection, all the sentiments one would associate with their partner. From a variety of anniversary cake designs, this was our go-to because it's simplistic aesthetic brings focus back to the gesture and sentiment.",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-04_18-08-04.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-04_18-08-13.png",
+            "/static/uploads/Screenshot_From_2025-12-04_18-08-20.png"
+        ]
+    },
+    {
+        "product_id": 37,
+        "product_name": "Volleyball Theme Cake",
+        "product_price": "3,650.00 ",
+        "description": "This Volleyball Theme Cake is designed for the girl who plays with grit, grace, and a whole lot of spike. \r\n\r\nThe focal point of this Volley Cake is a bold edible silhouette mid-jump\u2014arms raised, ready for action\u2014set against a 3D volleyball net that wraps around the front with clean, crisp tension. Topping it off is a smooth white volleyball sitting in a patch of piped green grass, giving the entire structure the energy of a court mid-match.",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-04_13-36-19.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-04_13-36-23.png",
+            "/static/uploads/Screenshot_From_2025-12-04_13-36-28.png"
+        ],
+        "category": "themed"
+    },
+    {
+        "product_id": 36,
+        "product_name": "Farm Birthday Cake",
+        "product_price": "6,500.00 ",
+        "description": "This Farm Birthday Cake is a down-to-earth delight for little animal lovers and tractor chasers alike. Sitting cheerfully at the top of this Barn Animals Cake is a boy in bright yellow boots, surrounded by a flock of friendly farm creatures and a bold red barn backdrop that pops with storybook charm. \r\n\r\nFrom fluffy sheep to spotty cows and chubby yellow ducklings, each character adds a layer of warmth and whimsy to the rural scene.",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-04_13-36-05.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-04_13-36-10.png",
+            "/static/uploads/Screenshot_From_2025-12-04_13-36-14.png"
+        ],
+        "category": "themed"
+    },
+    {
+        "product_id": 35,
+        "product_name": "Happy Bunny Cake",
+        "product_price": "3,750.00 ",
+        "description": "This Happy Bunny Cake is pure pastel joy, perfect for a springtime celebration or a little one who hops to the beat of her own drum. The front of this Bunny Face Cake is brought to life with bright, beaming eyes, rosy cheeks, and a cheerful smile\u2014topped off with tall ears peeking through a floral crown of soft peach roses, blue blossoms, and hand-piped leaves.",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-04_13-32-44.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-04_13-32-48.png",
+            "/static/uploads/Screenshot_From_2025-12-04_13-32-52.png"
+        ],
+        "category": "themed"
+    },
+    {
+        "product_id": 34,
+        "product_name": "Minnie Mouse Bow Cake",
+        "product_price": "3,450.00 ",
+        "description": "This Minnie Mouse Bow Cake is a picture-perfect tribute to everyone\u2019s favourite Disney darling, crafted with timeless charm and a pop of playful flair. The highlight of this Disney Minnie Cake is the oversized pink fondant bow with white polka dots, nestled between glossy black Minnie ears\u2014an iconic silhouette that needs no introduction. Lightly scattered around the soft vanilla base are golden and blush sugar pearls, adding just the right amount of sparkle.",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-04_13-32-36.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-04_13-32-40.png"
+        ],
+        "category": "themed"
+    },
+    {
+        "product_id": 33,
+        "product_name": " Blue and Gold Birthday Cake",
+        "product_price": " 1,275.00 ",
+        "description": "This exquisite Blue and Gold Birthday Cake is a true work of art. Crafted with beautiful blue strokes and lavish gold splashes, this cake is made for a birthday celebration to remember. Whether you\u2019re celebrating a special husband or daddy, this luxurious cake is sure to impress.",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-04_13-26-48.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-04_13-26-55.png",
+            "/static/uploads/Screenshot_From_2025-12-04_13-27-25.png"
+        ]
+    },
+    {
+        "product_id": 32,
+        "product_name": " Pineapple Cake - Seasonal Fruit Gateaux",
+        "product_price": "995.00 ",
+        "description": "Pineapple in a cake is an absolutely fantastic idea. This pineapple cake is made of light and airy vanilla sponge cake, layered with fresh pineapple bits and fresh cream - that has again been blended with pineapple. The pineapple cake is then decorated with cream swirls, dark chocolate ornaments, and pineapple bits. This cake with fresh pineapple is a perfect match as a pineapple birthday cake.\r\n\r\nThis Pineapple flavour cake looks simple yet supremely elegant and tastes divine. Light, airy and tropical, enjoy this fresh fruit pineapple cake while the season lasts. Everyone will love this pineapple cake - for occasions big or small. No colour, preservative, or artificial essence (except vanilla) is used in this Pineapple cake.",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-04_13-26-23.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-04_13-26-33.png",
+            "/static/uploads/Screenshot_From_2025-12-04_13-26-39.png"
+        ]
+    },
+    {
+        "product_id": 31,
+        "product_name": " Elegant Wifes Birthday Cake",
+        "product_price": "1,195.00 ",
+        "description": "Surprise the special lady in your life with an exquisite and romantic birthday cake! Perfectly crafted to be elegant and unique, this beautiful rosette cake is sure to make her swoon!\r\n\r\nTasteful and beautiful, this buttercream wifes birthday cake will make just the impact you're looking for! They deserve it!",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-04_13-08-01.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-04_13-08-06.png",
+            "/static/uploads/Screenshot_From_2025-12-04_13-08-12.png"
+        ]
+    },
+    {
+        "product_id": 30,
+        "product_name": "Opera Cake",
+        "product_price": "1,475.00 ",
+        "description": "Indulge in the decadent layers of our Opera Cake. Each bite of this luxurious coffee cake reveals a delicate balance of almond sponge, coffee meringue buttercream, and rich chocolate ganache. Experience the perfect harmony of flavors and textures, a true delight fit for the most refined palates. ",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-04_13-07-47.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-04_13-07-52.png",
+            "/static/uploads/Screenshot_From_2025-12-04_13-07-57.png"
+        ]
+    },
+    {
+        "product_id": 29,
+        "product_name": " Cartoon Lion Face Cake",
+        "product_price": "3,350.00 ",
+        "description": "This Cartoon Lion Face Cake is a bold and cheerful tribute to the king of the jungle\u2014perfect for a little cub turning another year older. The front of this Lion Birthday Cake features a sweet lion face framed in a soft orange mane, with button eyes and a tiny heart-shaped nose that instantly gives it a friendly, storybook vibe.",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-04_12-57-58.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-04_12-58-03.png",
+            "/static/uploads/Screenshot_From_2025-12-04_12-58-09.png"
+        ],
+        "category": "themed"
+    },
+    {
+        "product_id": 28,
+        "product_name": " Barbie Boho Cake",
+        "product_price": "4,250.00 ",
+        "description": "The Barbie Boho Cake is a refined birthday cake featuring delicate chocolate balls and elegant sails on top. Its sides showcase intricate patterns that add artistic detail and sophistication to the overall design, making it a perfect centerpiece for an elegant celebration.",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-04_12-57-42.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-04_12-57-50.png",
+            "/static/uploads/Screenshot_From_2025-12-04_12-57-54.png"
+        ],
+        "category": "themed"
+    },
+    {
+        "product_id": 27,
+        "product_name": " Bumblebee Theme Cake",
+        "product_price": "4,200.00 ",
+        "description": "This Bumblebee Theme Cake is the ultimate buzz of the party\u2014adorably animated and full of honeyed happiness.\r\n\r\nSitting proudly on top of this Cake are three smiling bees with rosy cheeks, stripey tummies, and the friendliest expressions, nestled among daisies and golden sprinkles. A glimmering gold number crowns the scene, bringing all the birthday attention right where it belongs.",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-04_12-52-47.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-04_12-52-51.png",
+            "/static/uploads/Screenshot_From_2025-12-04_12-52-56.png"
+        ],
+        "category": "themed"
+    },
+    {
+        "product_id": 26,
+        "product_name": " Hello Kitty Rainbow Cake",
+        "product_price": "6,400.00 ",
+        "description": "This Hello Kitty Rainbow Cake is a sugary daydream that feels like it stepped straight out of a pastel sky.\r\n\r\nFloating atop a bed of whipped cloud puffs, the star of this Pink Kitty Cake sits sweetly with a tiny floral bow, pearl necklace, and the daintiest smile, surrounded by a golden crescent moon, a bold rainbow arc, and fluttering hearts on wires that seem to dance in mid-air.",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-04_12-52-32.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-04_12-52-37.png",
+            "/static/uploads/Screenshot_From_2025-12-04_12-52-41.png"
+        ],
+        "category": "themed"
+    },
+    {
+        "product_id": 25,
+        "product_name": "Blueberry cake",
+        "product_price": "1,195.00 ",
+        "description": "Fresh blueberries embedded between a vanilla sponge layered with fresh cream is a cake you cannot beat. This Blueberry cake is carefully crafted to feed your cake craving and assures freshness in every bite. These blueberries are procured from the best and hand-picked to decorate your cake and is undoubtedly the cake you go to if you feel blue.",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-04_12-47-50.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-04_12-47-45.png",
+            "/static/uploads/Screenshot_From_2025-12-04_12-47-56.png"
+        ]
+    },
+    {
+        "product_id": 24,
+        "product_name": " Vanilla Berry Melange Cake",
+        "product_price": "1,095.00 ",
+        "description": "A vanilla cake like no other.. Whole strawberries, raspberries, blackberries and blueberries are slow cooked into a thick and flavourful berry compote that goes in the layers and as topping on this beautiful Vanilla sponge cake. Frosted and covered in cream cheese, this Vanilla berry melange cake is a cake that celebrates all the berries that we could get hold on.\r\n\r\nThe berries are the heroes here. Moist vanilla sponge cake, generously layered in between with the berry compote, and white chocolate ganache laced cream cheese frosting in this Vanilla cake. Decorated with cream swirls, white chocolate drips and berry bits, this Vanill berry melange cake looks beautiful and elegant, and tastes utterly divine.",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-04_12-47-31.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-04_12-47-36.png",
+            "/static/uploads/Screenshot_From_2025-12-04_12-47-40.png"
+        ]
+    },
+    {
+        "product_id": 23,
+        "product_name": " Mixed Fresh Fruit Cake",
+        "product_price": "945.00 ",
+        "description": "The Mixed fruit cake from liliyum has a blend of seasonal exotic fresh fruits like kiwi, pomegranate, pear, plum, apple etc. with a dash of raspberry compote between layers of vanilla sponges and white chocolate infused fresh cream makes this fruit birthday cake divine. This cake with fruits on top is a feast for the eyes as well as the palate.\r\n\r\nThe fresh fruit cake has fruits inside the layers as well as outside. Seasonal fruits adorn the top in a beautiful, patterned d\u00e9cor. This fresh fruit cake will always surprise you with the variety of fruits used in it, and it changes with the seasons. Celebrate the next event with a fresh fruit birthday cake. Bring colors to the celebration with this unique mixed fruit cake.",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-04_12-43-09.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-04_12-43-13.png",
+            "/static/uploads/Screenshot_From_2025-12-04_12-43-21.png"
+        ]
+    },
+    {
+        "product_id": 22,
+        "product_name": " Deliciously Moist Pistachio Cake",
+        "product_price": "1,300.00 ",
+        "description": "Experience the epitome of luxury with our decadent Pistachio Cake. Crafted with velvety buttercream, creamy custard, and caramelized pistachios, each bite is a symphony of flavors. Perfectly moist and indulgent, this pista cake is the perfect treat for any special occasion. Elevate your taste experience with this exquisite dessert.",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-04_12-42-56.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-04_12-43-01.png",
+            "/static/uploads/Screenshot_From_2025-12-04_12-43-05.png"
+        ]
+    },
+    {
+        "product_id": 21,
+        "product_name": "Brown Toy Car Cake",
+        "product_price": "4,000.00 ",
+        "description": "This Brown Toy Car Cake is the ultimate pit stop for a tiny speedster\u2019s big day, bringing together classic charm and first-birthday excitement in one playful design.\r\n\r\nTopping this Cute Car Cake With Balloons is a parade of cars in soft, earthy tones\u2014complete with oversized white wheels, rounded edges, and a whimsical crew of balloons bobbing behind them.  ",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-04_12-38-52.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-04_12-38-57.png",
+            "/static/uploads/Screenshot_From_2025-12-04_12-39-03.png"
+        ],
+        "category": "themed"
+    },
+    {
+        "product_id": 20,
+        "product_name": "Gudetama Cake",
+        "product_price": "4250.00",
+        "description": "This Gudetama Cake is equal parts lazy, lovable, and laugh-out-loud funny\u2014perfect for the kid (or adult) who\u2019s mastered the art of doing absolutely nothing.\r\n\r\nAtop this Egg Theme Cake, a sleepy Gudetama lounges in a cracked shell, eyes half-closed in signature apathy while his yolky buddies sprawl dramatically around the base. From party hats to bacon blankets, each little egg character brings its own weirdly relatable vibe.",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-04_12-38-37.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-04_12-38-43.png",
+            "/static/uploads/Screenshot_From_2025-12-04_12-38-48.png"
+        ],
+        "category": "themed"
+    },
+    {
+        "product_id": 19,
+        "product_name": " SpongeBob Patrick Cake",
+        "product_price": "9,850.00 ",
+        "description": "This quirky SpongeBob Patrick Cake brings an ocean of laughter to your celebration. Set against a bright aquatic blue, this double-tiered treat captures the spirit of Bikini Bottom in delicious detail.\r\n\r\nFrom the handcrafted jellyfish floating across the sides to the mini sea creatures and coral reef accents, every inch of this Bikini Bottom Cake is packed with joyful energy.",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-04_12-34-46.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-04_12-34-50.png",
+            "/static/uploads/Screenshot_From_2025-12-04_12-34-58.png"
+        ],
+        "category": "themed"
+    },
+    {
+        "product_id": 18,
+        "product_name": "Cinderella Theme Cake",
+        "product_price": " 5,350.00 ",
+        "description": "This dazzling Cinderella Theme Cake brings fairytale magic to life with an elegant pastel palette and enchanting character details. From the swirling gold carriage to the royal crown perched at the base, this Princess Birthday Cake is a celebration of classic charm and childhood wonder.\r\n\r\n",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-04_12-34-29.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-04_12-34-34.png",
+            "/static/uploads/Screenshot_From_2025-12-04_12-34-39.png"
+        ],
+        "category": "themed"
+    },
+    {
+        "product_id": 17,
+        "product_name": "Tres Leches Cake",
+        "product_price": "1,200.00 ",
+        "description": "Indulge in the divine decadence of our Tres Leches Cake. This traditional Mexican dessert features layers of moist sponge cake soaked in a rich blend of three milks, accompanied by the creamy delight of French vanilla. Savor the luxurious fusion of flavors and textures, reminiscent of a masterpiece in every bite.",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-04_12-29-45.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-04_12-30-05.png",
+            "/static/uploads/Screenshot_From_2025-12-04_12-30-12.png"
+        ]
+    },
+    {
+        "product_id": 16,
+        "product_name": " Lotus Biscoff Cake",
+        "product_price": " 1,300.00 ",
+        "description": "Indulge in the decadence of a Lotus Biscoff Cake. This luxurious treat combines the rich flavors of Biscoff and buttercream, with creamy custard layered in between. Perfect for celebrating special occasions or simply treating yourself to something extraordinary. Elevate your dessert experience with our exclusive Lotus Birthday Cake.",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-04_12-29-24.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-04_12-29-32.png",
+            "/static/uploads/Screenshot_From_2025-12-04_12-29-38.png"
+        ]
+    },
+    {
+        "product_id": 15,
+        "product_name": " Belgian choco vanilla buttercream Cake",
+        "product_price": "1,095.00 ",
+        "description": "If you\u2019re looking for a Belgian chocolate cake, but don\u2019t want a chocolate overload, we have the perfect match for you! This choco vanilla cake is the perfect combo of soft vanilla sponge layered with chocolate ganache, made with the finest couverture Belgian milk chocolate. And of course, it\u2019s called a Belgian choco vanilla buttercream cake for a reason- it\u2019s soft, creamy and absolutely mouthwatering buttercream frosting, that will have you licking your fingers clean!",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-04_12-27-24.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-04_12-27-31.png",
+            "/static/uploads/Screenshot_From_2025-12-04_12-27-36.png"
+        ]
+    },
+    {
+        "product_id": 14,
+        "product_name": "Chocolate Fudge Cake",
+        "product_price": "1,400.00 ",
+        "description": "Celebrate any special occasion with this delicious Chocolate Fudge Cake. Made from carefully selected cocoa, this decadent cake is crafted to perfection to deliver a delightfully rich and smooth chocolate flavor. Exquisitely finished with gold accents for a luxurious touch, this decadent chocolate fudge cake will impress any guest at your events.",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-04_12-25-18.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-04_12-25-24.png",
+            "/static/uploads/Screenshot_From_2025-12-04_12-25-32.png"
+        ]
+    },
+    {
+        "product_id": 13,
+        "product_name": "Pink Purple Butterfly Birthday Cake",
+        "product_price": "8,400.00 ",
+        "description": "Soft and enchanting, this Pink Purple Butterfly Birthday Cake is a whimsical celebration of elegance in every pastel detail. With its seamless balance of lavender, blush pink, and sugar pearls, this Pastel Butterfly Cake is ideal for those looking to add grace and beauty to their celebration. ",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-04_12-21-01.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-04_12-21-26.png",
+            "/static/uploads/Screenshot_From_2025-12-04_12-21-32.png"
+        ],
+        "category": "themed"
+    },
+    {
+        "product_id": 12,
+        "product_name": "Baby On Board Cake",
+        "product_price": "5,250.00",
+        "description": "This Baby On Board Cake captures the joy of a growing family with a charmingly playful design. Tiny booties, scattered flowers, and delicate textures bring out the sweetness of this Stork Cake, where the iconic white stork proudly carries a bottle, announcing the arrival of a little one in its own whimsical way. ",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-04_12-16-15.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-04_12-19-49.png",
+            "/static/uploads/Screenshot_From_2025-12-04_12-19-41.png"
+        ],
+        "category": "themed"
+    },
+    {
+        "product_id": 11,
+        "product_name": "Potterhead Cake",
+        "product_price": " 5,250.00 ",
+        "description": "Calling all witches, wizards, and birthday muggles \u2014 this Potterhead Cake is your golden ticket to a magical celebration. With edible broomsticks, wands, and Gryffindor scarves, this Harry Potter Themed Birthday Cake brings Hogwarts straight to your party table \u2014 no spellwork required.",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-04_12-10-48.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-04_12-10-57.png",
+            "/static/uploads/Screenshot_From_2025-12-04_12-11-16.png"
+        ],
+        "category": "themed"
+    },
+    {
+        "product_id": 10,
+        "product_name": "Blue Lock Cake",
+        "product_price": "4,500.00 ",
+        "description": "Calling all strikers, goalkeepers, and anime fans \u2014 this Blue Lock Cake is here to take the spotlight! Inspired by the high-intensity world of Blue Lock, this vibrant cake features your favourite characters poised for glory.\r\n\r\nDecorated with 3D soccer balls, gradient orbs, and manga-style speech bubbles, this Manga Cake is a birthday dream for every football-obsessed teen.",
+        "image_url": "/static/uploads/Screenshot_From_2025-12-04_11-58-44.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-12-04_11-58-50.png",
+            "/static/uploads/Screenshot_From_2025-12-04_11-58-56.png"
+        ],
+        "category": "themed"
+    },
+    {
+        "product_id": 3,
+        "product_name": "Butterscotch Cake",
+        "product_price": "945.00 ",
+        "description": "Caramel butterscotch cake is one of the most loved flavors when it comes to desserts amongst kids and adults alike. This butterscotch cake is an exquisite crunchy delight, with silky smooth caramel cream and nutty cashew praline surprises, nestled between soft vanilla sponge. This vanilla butterscotch cake is perfect for any occasion, big or small.\r\nThis vanilla butterscotch cake has it all \u2013 dollops of delicious butterscotch sauce, crunchy butterscotch balls and crushed homemade cashew caramel pralines for that extra dimension of texture. Ensure to order a good size of this caramel butterscotch cake, because nobody is going to stop at just one helping!",
+        "image_url": "/static/uploads/Screenshot_2025-11-17_102550.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_2025-11-17_102603.png",
+            "/static/uploads/Screenshot_2025-11-17_102625.png",
+            "/static/uploads/Screenshot_2025-11-17_102644.png"
+        ]
+    },
+    {
+        "product_id": 4,
+        "product_name": "Belgian Chocolate Vanilla Cake",
+        "product_price": " 1,095.00 ",
+        "description": "For the light-hearted vanilla lover in you, this chocolate vanilla cake playfully combines the classic vanilla sponge with a rich yet fluffy chocolate buttercream in a wholesome medley. As you dive into the creamy chocolate frosting, first you\u2019re greeted by a soft layer of vanilla sponge and as you go deeper\u2026ah! You\u2019ve stumbled upon a layer of chocolate cake, smothered in creamy chocolaty goodness. And just when you think it doesn\u2019t get any better, you find it resting on a pillow of good old vanilla, that will cradle you right back to comfort\u2026",
+        "image_url": "/static/uploads/Screenshot_From_2025-11-17_11-29-21.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-11-17_11-29-45.png",
+            "/static/uploads/Screenshot_From_2025-11-17_11-30-06.png"
+        ]
+    },
+    {
+        "product_id": 5,
+        "product_name": "Chocolate Pistachio Cake",
+        "product_price": "1,325.00 ",
+        "description": "Discover the perfect union of two classic flavors with our Chocolate Pistachio Cake. This gourmet creation is designed to be the centerpiece of any celebration, from birthdays to dinner parties.\r\n\r\nEach slice offers a delightful experience, beginning with a moist and rich chocolate sponge. This is perfectly complemented by layers of our light, creamy pistachio buttercream filling, creating a harmonious balance of decadent chocolate and subtle, nutty sweetness. The entire cake is then expertly covered in a smooth chocolate buttercream frosting and finished with a dusting of chopped pistachios.\r\n\r\nThis cake is not just a dessert; it's a testament to exceptional taste and craftsmanship, guaranteed to impress every guest.",
+        "image_url": "/static/uploads/Screenshot_From_2025-11-17_11-37-25.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-11-17_11-38-17.png",
+            "/static/uploads/Screenshot_From_2025-11-17_11-38-29.png",
+            "/static/uploads/Screenshot_From_2025-11-17_11-38-46.png"
+        ]
+    },
+    {
+        "product_id": 6,
+        "product_name": "Origami Cake For Wifes Birthday",
+        "product_price": "3,400.00 ",
+        "description": "Indulge in the exquisite Origami Cake, specially created for your wife's birthday. This hand crafted masterpiece boasts a stunning geometric design, adorned with delicate pink peonies, and enveloped in a pastel blue chocolate shell. A cake fit for the elegant and sophisticated taste of a woman.",
+        "image_url": "/static/uploads/Screenshot_From_2025-11-17_11-43-16.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-11-17_11-44-05.png",
+            "/static/uploads/Screenshot_From_2025-11-17_11-44-18.png"
+        ]
+    },
+    {
+        "product_id": 7,
+        "product_name": "Romantic Anniversary Buttercream Cake",
+        "product_price": "1,195.00 ",
+        "description": "This romantic cake design will bring your love full circle and brighten up the celebration of love. Pink, red and white hearts made out of chocolate embellish the entirety of this beautiful romantic anniversary cake.",
+        "image_url": "/static/uploads/Screenshot_From_2025-11-17_11-48-32.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-11-17_11-48-45.png"
+        ]
+    },
+    {
+        "product_id": 8,
+        "product_name": "Abstract Blue Cake",
+        "product_price": "1,195.00 ",
+        "description": "Roots and wings is the theme of this abstract blue cake. With gold splatters around the walls, the entire design of this blue cake centers on elegance and class.\r\nHere we have a white base with different shades of blue forming the ornamentation at the bottom of this special cake. The uneven coating of frosting on top of this blue cake design complements the decorations at the bottom.",
+        "image_url": "/static/uploads/Screenshot_From_2025-11-17_11-50-39.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-11-17_11-50-52.png",
+            "/static/uploads/Screenshot_From_2025-11-17_11-51-20.png"
+        ]
+    },
+    {
+        "product_id": 9,
+        "product_name": "Belgian Couverture Chocolate Cake",
+        "product_price": "995.00 ",
+        "description": "This Belgium milk couverture chocolate cake is dedicated to the chocoholic in you - a light moist chocolate truffle cake filled and topped with real Belgian chocolate ganache. Belgian milk chocolate is used to layer and cover this chocolate cake and is not bitter like dark chocolate.",
+        "image_url": "/static/uploads/Screenshot_From_2025-11-17_12-02-38.png",
+        "extra_images": [
+            "/static/uploads/Screenshot_From_2025-11-17_12-02-50.png",
+            "/static/uploads/Screenshot_From_2025-11-17_12-03-07.png"
+        ]
+    }
+]

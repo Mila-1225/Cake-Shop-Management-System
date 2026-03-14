@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block title %}Add Bakery Item{% endblock %}
+{% block content %}
+
+<h3 style="color:var(--maroon); margin-bottom:20px;">Add Bakery Item</h3>
+
+<form action="{{ url_for('admin_add_bakery') }}" method="post" enctype="multipart/form-data"
+      class="card p-4" style="max-width:650px;background:rgba(255,255,255,0.1);backdrop-filter:blur(6px);">
+
+  <div class="mb-3">
+    <label class="form-label">Item Name</label>
+    <input name="product_name" class="form-control" required>
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label">Price (₹)</label>
+    <input name="product_price" class="form-control" required>
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label">Description</label>
+    <textarea name="description" class="form-control" rows="3"></textarea>
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label">Main Image</label>
+    <input type="file" name="file" accept="image/*" class="form-control" required>
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label">Extra Images (optional)</label>
+    <input type="file" name="extra_images" accept="image/*" class="form-control" multiple>
+  </div>
+
+  <button class="btn btn-primary mt-3">Add Bakery Item</button>
+</form>
+
+{% endblock %}

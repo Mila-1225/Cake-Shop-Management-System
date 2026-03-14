@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block title %}Themed Cakes{% endblock %}
+{% block content %}
+
+<h2 style="color:var(--maroon); font-weight:900;">Themed Cakes</h2>
+<p class="small-muted">Special designer cakes for parties & events.</p>
+
+<style>
+  .cake-card {
+      width:280px;
+      border:none;
+      cursor:pointer;
+      margin-bottom:30px;
+      transition:0.2s;
+  }
+  .cake-card:hover { transform:scale(1.03); }
+
+  .cake-img {
+      width:100%;
+      height:220px;
+      border-radius:14px;
+      object-fit:cover;
+      box-shadow:0 4px 12px rgba(0,0,0,0.12);
+  }
+</style>
+
+<div class="d-flex flex-wrap gap-4 mt-4">
+  {% for p in products %}
+  <a href="{{ url_for('product_details', product_id=p.product_id) }}" class="text-decoration-none">
+    <div class="cake-card">
+      <img src="{{ p.image_url }}" class="cake-img">
+      <div style="margin-top:10px; font-weight:700; color:var(--maroon);">
+        {{ p.product_name }}
+      </div>
+      <div style="color:var(--gold); font-weight:800; font-size:20px;">
+        ₹{{ p.product_price }}
+      </div>
+    </div>
+  </a>
+  {% endfor %}
+</div>
+
+{% endblock %}

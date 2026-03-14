@@ -1,0 +1,22 @@
+{% extends "admin_base.html" %}
+{% block content %}
+
+<h2>Product Preview</h2>
+
+<div class="card p-4">
+
+    <img src="{{ product.image_url }}" width="250" class="rounded mb-3">
+
+    <h3>{{ product.product_name }}</h3>
+
+    <p><strong>Price:</strong> ₹{{ product.product_price }}</p>
+
+    <p><strong>Description:</strong><br>{{ product.description }}</p>
+
+    <a href="{{ url_for('admin_edit_product', pid=product.product_id) }}" class="btn btn-warning">Edit</a>
+
+    <a href="{{ url_for('admin_products') }}" class="btn btn-secondary">Back</a>
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Order #{{ order.order_id }}{% endblock %}
+{% block content %}
+<h3>Order #{{ order.order_id }}</h3>
+<p><strong>Total:</strong> ₹{{ order.total_amount }}</p>
+<p><strong>Status:</strong> {{ order.order_status }}</p>
+<p><strong>Delivery:</strong> {{ order.delivery_date }} {{ order.delivery_time }}</p>
+<p><strong>Items:</strong></p>
+<ul>
+  {% for it in order.items %}
+  <li>{{ it.product_name }} × {{ it.quantity }}</li>
+  {% endfor %}
+</ul>
+{% if order.photo_url %}<p><strong>Reference photo:</strong><br><img src="{{ order.photo_url }}" style="max-width:320px"></p>{% endif %}
+{% endblock %}

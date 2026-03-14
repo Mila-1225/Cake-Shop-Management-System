@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block title %}Admin Orders{% endblock %}
+{% block content %}
+
+<h3 class="mb-3" style="color:var(--maroon)">All Orders</h3>
+
+<div class="table-responsive">
+  <table class="table table-bordered table-striped">
+    <thead class="table-dark">
+      <tr>
+        <th>ID</th>
+        <th>User</th>
+        <th>Total</th>
+        <th>Status</th>
+        <th>Date</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      {% for o in orders|reverse %}
+      <tr>
+        <td>#{{ o.order_id }}</td>
+
+        <td>
+          {% set u = (users | selectattr('user_id','equalto', o.user_id) | list).0 %}
+          {{ u.username if u else 'Guest' }}
+        </td>
+
+        <td>₹{{ o.total_amount }}</td>
+        <td>{{ o.order_status }}</td>
+        <td>{{ o.timestamp[:10] if o.timestamp else 'N/A' }}</td>
+
+
+        <td>
+          <a href="{{ url_for('admin_order_detail', order_id=o.order_id) }}" class="btn btn-sm btn-maroon">
+            View
+          </a>
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+{% endblock %}

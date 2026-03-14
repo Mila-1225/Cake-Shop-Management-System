@@ -1,0 +1,112 @@
+{% extends "admin_base.html" %}
+{% block content %}
+
+<h2 class="mb-4" style="font-weight:700">Admin Dashboard</h2>
+
+<!-- STAT CARDS -->
+<div class="row">
+
+    <div class="col-md-3 mb-3">
+        <div class="card p-3 bg-warning text-dark shadow">
+            <h4>Pending</h4>
+            <h1>{{ stats.pending }}</h1>
+        </div>
+    </div>
+
+    <div class="col-md-3 mb-3">
+        <div class="card p-3 bg-info text-dark shadow">
+            <h4>Baking</h4>
+            <h1>{{ stats.baking }}</h1>
+        </div>
+    </div>
+
+    <div class="col-md-3 mb-3">
+        <div class="card p-3 bg-primary text-white shadow">
+            <h4>Out for Delivery</h4>
+            <h1>{{ stats.out }}</h1>
+        </div>
+    </div>
+
+    <div class="col-md-3 mb-3">
+        <div class="card p-3 bg-success text-white shadow">
+            <h4>Delivered</h4>
+            <h1>{{ stats.delivered }}</h1>
+        </div>
+    </div>
+
+</div>
+
+
+<h3 class="mt-5 mb-3">Recent Orders</h3>
+
+<table class="table table-bordered table-striped bg-white shadow-sm">
+    <thead class="table-dark">
+        <tr>
+            <th>Order</th>
+            <th>User</th>
+            <th>Contact</th>
+            <th>Items</th>
+            <th>Payment</th>
+            <th>Delivery</th>
+            <th>Status</th>
+            <th>Message</th>
+            <th>Photo</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        {% for o in orders %}
+        <tr>
+            <td>#{{ o.order_id }}</td>
+
+            <td>
+                <b>{{ o.username }}</b><br>
+                <small>{{ o.email }}</small>
+            </td>
+
+            <td>{{ o.phone or "-" }}<br>{{ o.address or "-" }}</td>
+
+            <td>
+                <b>{{ o['items']|length }}</b> item(s)
+            </td>
+
+            <td>{{ o.payment_mode }}</td>
+
+            <td>
+                <b>{{ o.delivery_date }}</b><br>
+                <small>{{ o.delivery_time }}</small>
+            </td>
+
+            <td>
+                {% if o.order_status == "Pending" %}
+                    <span class="badge bg-warning text-dark">Pending</span>
+                {% elif o.order_status == "Baking" %}
+                    <span class="badge bg-info text-dark">Baking</span>
+                {% elif o.order_status == "Out for Delivery" %}
+                    <span class="badge bg-primary">Out for Delivery</span>
+                {% elif o.order_status == "Delivered" %}
+                    <span class="badge bg-success">Delivered</span>
+                {% endif %}
+            </td>
+
+            <td>{{ o.customer_message if o.customer_message else "-" }}</td>
+
+            <td>
+                {% if o.photo_url %}
+                <img src="{{ o.photo_url }}" style="width:60px;height:60px;object-fit:cover;border-radius:6px">
+                {% else %} - {% endif %}
+            </td>
+
+            <td>
+                <a class="btn btn-sm btn-primary"
+                   href="{{ url_for('admin_view_order', order_id=o.order_id) }}">
+                    View Order
+                </a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+{% endblock %}

@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block title %}Add Themed Cake{% endblock %}
+{% block content %}
+
+<h3 style="color:var(--maroon); margin-bottom:20px;">Add Themed Cake</h3>
+
+<form action="{{ url_for('admin_add_themed_product') }}" method="post" enctype="multipart/form-data"
+      class="card p-4" style="max-width:650px;background:rgba(255,255,255,0.1);backdrop-filter:blur(6px);">
+
+  <!-- PRODUCT NAME -->
+  <div class="mb-3">
+    <label class="form-label">Cake Name</label>
+    <input name="product_name" class="form-control" required>
+  </div>
+
+  <!-- PRICE -->
+  <div class="mb-3">
+    <label class="form-label">Price (₹)</label>
+    <input name="product_price" class="form-control" required>
+  </div>
+
+  <!-- DESCRIPTION -->
+  <div class="mb-3">
+    <label class="form-label">Description</label>
+    <textarea name="description" class="form-control" rows="3"></textarea>
+  </div>
+
+  <!-- MAIN IMAGE -->
+  <div class="mb-3">
+    <label class="form-label">Main Image</label>
+    <input type="file" name="file" accept="image/*" class="form-control" required>
+  </div>
+
+  <!-- EXTRA IMAGES -->
+  <div class="mb-3">
+    <label class="form-label">Extra Images (optional)</label>
+    <input type="file" name="extra_images" accept="image/*" class="form-control" multiple>
+  </div>
+
+  <button class="btn btn-primary mt-3">Add Themed Cake</button>
+</form>
+
+{% endblock %}

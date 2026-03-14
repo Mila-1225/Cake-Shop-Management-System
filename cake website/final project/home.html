@@ -1,0 +1,110 @@
+{% extends "base.html" %}
+{% block title %}Cake Haven — Home{% endblock %}
+{% block content %}
+
+<!-- HERO SECTION -->
+<section style="
+  width:100%;
+  height:450px;
+  background:url('/static/banner1.jpg') center/cover no-repeat;
+  border-radius:14px;
+  position:relative;
+  overflow:hidden;
+">
+  <div style="
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.35);
+    backdrop-filter:blur(2px);
+  "></div>
+
+  <div style="
+    position:absolute;
+    bottom:40px;
+    left:40px;
+    color:white;
+    max-width:650px;
+  ">
+    <h1 style="font-size:42px;font-weight:800;line-height:1.1;">
+      Premium Custom Cakes<br>Made Fresh Every Day
+    </h1>
+    <p style="font-size:18px;margin-top:10px">
+      From birthday cakes to designer themes — pick your dream cake.
+    </p>
+    <a href="{{ url_for('shop') }}"
+       class="btn"
+       style="margin-top:20px;background:var(--maroon);color:white;border-radius:8px;padding:12px 22px">
+      Shop Now
+    </a>
+  </div>
+</section>
+
+
+<!-- FEATURES -->
+<div style="margin-top:40px" class="row">
+  <div class="card" style="text-align:center;flex:1">
+    <h3 style="color:var(--maroon)">Freshly Baked</h3>
+    <p style="color:var(--muted)">All cakes are prepared on order.</p>
+  </div>
+
+  <div class="card" style="text-align:center;flex:1">
+    <h3 style="color:var(--maroon)">Premium Ingredients</h3>
+    <p style="color:var(--muted)">No premix. Real cream & flavors.</p>
+  </div>
+
+  <div class="card" style="text-align:center;flex:1">
+    <h3 style="color:var(--maroon)">On-Time Delivery</h3>
+    <p style="color:var(--muted)">Choose your delivery slot.</p>
+  </div>
+</div>
+
+
+<!-- POPULAR PRODUCTS -->
+<h2 style="color:var(--maroon);margin-top:50px">Popular Cakes</h2>
+<p style="color:var(--muted)">Our most-loved creations</p>
+
+<div class="row" style="margin-top:15px">
+  {% for product in products[:3] %}
+  <div class="card" style="width:260px;text-align:center">
+    <img src="{{ product.image_url }}" alt="{{ product.product_name }}"
+      style="width:100%;height:150px;object-fit:cover;border-radius:8px">
+
+    <h3 style="color:var(--maroon);margin:10px 0 6px">
+      {{ product.product_name }}
+    </h3>
+
+    <div style="margin-top:10px;font-weight:800;color:var(--gold)">
+      ₹{{ product.product_price }}
+    </div>
+
+    <a href="{{ url_for('product_details', product_id=product.product_id) }}"
+       class="btn"
+       style="margin-top:12px">View</a>
+  </div>
+  {% endfor %}
+</div>
+
+
+<!-- WHY US SECTION -->
+<section style="
+  margin-top:70px;
+  padding:40px;
+  background:var(--maroon);
+  border-radius:14px;
+  color:white;
+">
+  <h2 style="font-size:32px;font-weight:700">Why Choose Cake Haven?</h2>
+  <p style="max-width:700px;font-size:18px;margin-top:10px;color:#f8d7d7">
+    We combine premium ingredients, artistic detailing and world-class hygiene
+    to craft cakes that are not only beautiful, but unforgettable.
+  </p>
+
+  <ul style="margin-top:20px;font-size:18px;line-height:1.6">
+    <li>✔ 100% Eggless Options</li>
+    <li>✔ Designer & Custom Cakes</li>
+    <li>✔ Fresh cream & natural extracts</li>
+    <li>✔ Live order tracking (Coming Soon)</li>
+  </ul>
+</section>
+
+{% endblock %}

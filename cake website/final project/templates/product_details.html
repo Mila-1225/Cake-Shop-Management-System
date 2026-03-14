@@ -1,0 +1,293 @@
+{% extends "base.html" %}
+{% block title %}{{ product.product_name }}{% endblock %}
+{% block content %}
+
+<style>
+/* Layout */
+.container-wide { max-width:1200px; }
+.left-thumbs { display:flex; flex-direction:column; gap:12px; align-items:center; }
+.left-thumbs img { width:88px; height:88px; object-fit:cover; border-radius:10px; border:2px solid #ddd; cursor:pointer; padding:4px; background:#fff; }
+.left-thumbs img:hover { border-color:var(--maroon); transform:scale(1.04); }
+
+/* Center main image + magnifier */
+.center-img-wrap { display:flex; justify-content:center; }
+.image-wrapper {
+    width: 100%;
+    max-width:640px;
+    height:540px;
+    border-radius:14px;
+    overflow:hidden;
+    position:relative;
+    background:#faf8f6;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+#zoomImg { width:100%; height:100%; object-fit:contain; }
+
+/* Magnifier */
+.magnifier {
+    position:absolute;
+    width:160px;
+    height:160px;
+    border-radius:50%;
+    pointer-events:none;
+    border:3px solid var(--maroon);
+    background-repeat:no-repeat;
+    background-size:240%;
+    display:none;
+    z-index:10;
+}
+
+/* Description centered under main image */
+.desc-box {
+    max-width:760px;
+    margin:22px auto 0 auto;
+    padding:16px;
+    background:rgba(255,255,255,0.95);
+    border-radius:10px;
+    text-align:left;
+}
+
+/* Sticky right panel */
+.sticky-panel {
+    position:sticky;
+    top:120px;
+    padding:24px;
+    border-radius:12px;
+    background:#fff;
+    box-shadow:0 6px 18px rgba(0,0,0,0.06);
+}
+
+/* Reviews */
+.review-box { background:#fff;padding:14px;border-radius:10px;margin-bottom:12px;border:1px solid #f0f0f0; }
+.star { color:var(--gold); font-size:18px; }
+
+/* Similar carousel */
+.similar-row { display:flex; gap:12px; overflow-x:auto; padding-bottom:6px; }
+.similar-card { min-width:200px; max-width:200px; border-radius:10px; overflow:hidden; background:#fff; padding:10px; box-shadow:0 6px 18px rgba(0,0,0,0.05); text-align:center; }
+.similar-card img { width:100%; height:120px; object-fit:cover; border-radius:8px; }
+
+/* Responsive tweaks */
+@media (max-width:991px) {
+  .left-thumbs { display:none; }
+  .sticky-panel { position:static; margin-top:18px; }
+  .image-wrapper { max-width:100%; height:420px; }
+  .desc-box { margin:18px 0; }
+}
+</style>
+
+<div class="container container-wide mt-4">
+
+  <!-- Product Title -->
+  <h1 style="font-weight:900;color:var(--maroon);text-align:center;font-size:36px;margin-bottom:10px;">
+    {{ product.product_name }}
+  </h1>
+
+  <div class="row gx-4">
+
+    <!-- LEFT: Thumbnails (vertical) -->
+    <div class="col-lg-1 d-none d-lg-flex">
+      <div class="left-thumbs">
+        <img src="{{ product.image_url }}" onclick="changeImg('{{ product.image_url }}')">
+        {% for img in product.extra_images or [] %}
+          <img src="{{ img }}" onclick="changeImg('{{ img }}')">
+        {% endfor %}
+      </div>
+    </div>
+
+    <!-- CENTER: Main Image & Description -->
+    <div class="col-lg-7 col-md-12">
+      <div class="center-img-wrap">
+        <div class="image-wrapper" id="imageArea">
+          <img id="zoomImg" src="{{ product.image_url }}" alt="{{ product.product_name }}">
+          <div id="magnifier" class="magnifier"></div>
+        </div>
+      </div>
+
+      <div class="desc-box">
+        <h4 style="color:var(--maroon);font-weight:800;margin-bottom:8px;">Description</h4>
+        <p style="font-size:16px;line-height:1.6;color:#333;">{{ product.description }}</p>
+      </div>
+
+      <!-- REVIEWS LIST -->
+      <div style="margin-top:22px;">
+        <h3 style="color:var(--maroon);font-weight:900;">Customer Reviews</h3>
+
+        {% if reviews %}
+          {% for rv in reviews %}
+            <div class="review-box">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">
+                <div style="font-weight:800;color:var(--maroon);">{{ rv.name }}</div>
+                <div class="star">{{ "★" * rv.rating }}{{ "☆" * (5 - rv.rating) }}</div>
+              </div>
+              <div style="color:#444;">{{ rv.comment }}</div>
+              <div style="font-size:12px;color:#888;margin-top:8px;">{{ rv.timestamp }}</div>
+            </div>
+          {% endfor %}
+        {% else %}
+          <div class="alert alert-info">No reviews yet — be the first to review!</div>
+        {% endif %}
+
+        <!-- Review submission form -->
+        <div class="card p-3 mt-3">
+          <h5 style="margin-bottom:8px;">Add a review</h5>
+          <form method="post" action="{{ url_for('submit_review', product_id=product.product_id) }}">
+            <div class="mb-2">
+              <label class="form-label">Your name</label>
+              <input name="name" class="form-control" placeholder="Your name (optional)">
+            </div>
+
+            <div class="mb-2">
+              <label class="form-label">Rating</label>
+              <select name="rating" class="form-select" required>
+                <option value="5">5 — Excellent</option>
+                <option value="4">4 — Very Good</option>
+                <option value="3">3 — Good</option>
+                <option value="2">2 — Fair</option>
+                <option value="1">1 — Poor</option>
+              </select>
+            </div>
+
+            <div class="mb-2">
+              <label class="form-label">Comment</label>
+              <textarea name="comment" rows="3" class="form-control" placeholder="Write your thoughts..."></textarea>
+            </div>
+
+            <button class="btn btn-primary">Submit Review</button>
+          </form>
+        </div>
+
+      </div>
+
+      <!-- SIMILAR CAKES CAROUSEL -->
+      <div style="margin-top:28px;">
+        <h4 style="color:var(--maroon);font-weight:800;">Similar Cakes</h4>
+        <div class="similar-row mt-2">
+          {% for s in similar %}
+            <a class="similar-card" href="{{ url_for('product_details', product_id=s.product_id) }}">
+              <img src="{{ s.image_url }}">
+              <div style="font-weight:800;margin-top:8px;color:#222;">{{ s.product_name }}</div>
+              <div style="color:var(--gold);font-weight:900;margin-top:6px;">₹{{ s.product_price }}</div>
+            </a>
+          {% endfor %}
+          {% if similar|length == 0 %}
+            <div class="alert alert-light">No similar cakes found.</div>
+          {% endif %}
+        </div>
+      </div>
+
+    </div> <!-- /center col -->
+
+    <!-- RIGHT: sticky panel -->
+    <div class="col-lg-4 col-md-12">
+      <div class="sticky-panel">
+        <div style="display:flex;justify-content:space-between;align-items:center;">
+          <div style="font-weight:900;color:var(--maroon);font-size:22px;">₹{{ product.product_price }}</div>
+          <div style="color:#777;font-size:13px;">Product ID: {{ product.product_id }}</div>
+        </div>
+
+        <form action="{{ url_for('checkout') }}" method="post" enctype="multipart/form-data" style="margin-top:12px;">
+          <input type="hidden" name="product_id" value="{{ product.product_id }}">
+
+          <div class="mb-3">
+            <label class="form-label">Size</label>
+            <select name="size" class="form-select">
+              <option>Small (500gm)</option>
+              <option>Medium (1kg)</option>
+              <option>Large (2kg)</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Flavour</label>
+            <select name="flavour" class="form-select">
+              <option>Chocolate</option>
+              <option>Vanilla</option>
+              <option>Butterscotch</option>
+              <option>Red Velvet</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Egg / Eggless</label>
+            <select name="egg_option" class="form-select">
+              <option>Eggless</option>
+              <option>Egg</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Cake Message</label>
+            <input type="text" name="customer_message" class="form-control" maxlength="80" placeholder="Happy Birthday!">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Delivery Date</label>
+            <input type="date" name="delivery_date" required class="form-control">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Delivery Time</label>
+            <input type="time" name="delivery_time" required class="form-control">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Payment Mode</label>
+            <select name="payment_mode" class="form-select" required>
+              <option value="COD">Cash on Delivery</option>
+              <option value="UPI">UPI</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Upload Reference Photo</label>
+            <input type="file" name="order_photo" accept="image/*" class="form-control">
+          </div>
+
+         <div style="display:flex;gap:10px;margin-top:8px;">
+  <a href="{{ url_for('add_to_cart', product_id=product.product_id) }}" class="btn btn-outline-maroon">
+    <i class="fas fa-shopping-cart"></i> Add to Cart
+  </a>
+  <a href="{{ url_for('my_custom_designs') }}" class="btn btn-outline-primary">
+    <i class="fas fa-plus"></i> Add More
+  </a>
+</div>
+        </form>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- JS: magnifier & thumbnail behavior -->
+<script>
+const wrapper = document.getElementById("imageArea");
+const img = document.getElementById("zoomImg");
+const magnifier = document.getElementById("magnifier");
+
+function changeImg(src) {
+    img.src = src;
+    // update magnifier background when image changes
+    magnifier.style.backgroundImage = `url('${src}')`;
+}
+
+wrapper.addEventListener("mousemove", function(e) {
+    const rect = wrapper.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+
+    magnifier.style.display = "block";
+    magnifier.style.left = (x - 80) + "px";
+    magnifier.style.top = (y - 80) + "px";
+
+    magnifier.style.backgroundImage = `url('${img.src}')`;
+    // tweak multiplier for zoom effect
+    magnifier.style.backgroundPosition = `-${(x / rect.width) * 100 * 1.5}% -${(y / rect.height) * 100 * 1.5}%`;
+});
+wrapper.addEventListener("mouseleave", () => {
+    magnifier.style.display = "none";
+});
+</script>
+
+{% endblock %}

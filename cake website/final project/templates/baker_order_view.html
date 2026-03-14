@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+{% block title %}Order #{{ order.order_id }}{% endblock %}
+{% block content %}
+<a class="btn btn-sm btn-outline-secondary mb-3" href="{{ url_for('baker_dashboard') }}">← Back to dashboard</a>
+
+<div class="card p-4 mb-3">
+  <h3>Order #{{ order.order_id }}</h3>
+  <p><b>Status:</b> {{ order.order_status }}</p>
+  <p><b>Placed:</b> {{ order.timestamp }}</p>
+  <p><b>Customer Message:</b> {{ order.customer_message or '—' }}</p>
+
+  {% if order.photo_url %}
+    <p><b>Customer reference:</b></p>
+    <img src="{{ order.photo_url }}" style="max-width:360px;border-radius:8px;" alt="order photo">
+  {% endif %}
+
+  <hr>
+
+  <h5>Items</h5>
+<div>
+  {% for it in order['items'] %}
+    <div class="d-flex align-items-center mb-2">
+      {% if it.image_url %}
+        <img src="{{ it.image_url }}" style="width:70px;height:70px;object-fit:cover;border-radius:6px;margin-right:12px;">
+      {% endif %}
+      <div>
+        <div><b>{{ it.product_name }}</b></div>
+        <div>Qty: {{ it.quantity }} • Price: ₹{{ it.product_price }}</div>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+
+  <hr>
+
+  <h5>Delivery</h5>
+  <p><b>Date:</b> {{ order.delivery_date or 'Not set' }} <b>Time:</b> {{ order.delivery_time or 'Not set' }}</p>
+  <p><b>Address:</b> {{ order.address or '—' }}</p>
+  <p><b>Phone:</b> {{ order.phone or '—' }}</p>
+
+  <hr>
+
+  <h5>Update Status</h5>
+  <form method="post" action="{{ url_for('baker_update_status', order_id=order.order_id) }}">
+    <div class="mb-2">
+      <label class="form-label">Status</label>
+      <select name="status" class="form-control" required>
+        <option value="Received" {% if order.order_status=='Received' %}selected{% endif %}>Received</option>
+        <option value="Baking" {% if order.order_status=='Baking' %}selected{% endif %}>Baking</option>
+        <option value="Ready" {% if order.order_status=='Ready' %}selected{% endif %}>Ready</option>
+        <option value="Out for Delivery" {% if order.order_status=='Out for Delivery' %}selected{% endif %}>Out for Delivery</option>
+        <option value="Delivered" {% if order.order_status=='Delivered' %}selected{% endif %}>Delivered</option>
+      </select>
+    </div>
+
+    <div class="mb-2">
+      <label class="form-label">Baker Note (optional)</label>
+      <textarea name="baker_note" class="form-control" rows="2">{{ order.baker_note or '' }}</textarea>
+    </div>
+
+    <button class="btn btn-success">Update</button>
+  </form>
+
+  {% if order.status_history %}
+    <hr>
+    <h6>Status History</h6>
+    <ul>
+      {% for sh in order.status_history %}
+        <li>{{ sh.timestamp }} — {{ sh.status }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+</div>
+{% endblock %}

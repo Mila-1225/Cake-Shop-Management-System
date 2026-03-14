@@ -1,0 +1,85 @@
+[
+    {
+        "colors": {
+            "embellishment_color": "#ffffff",
+            "filling_color": "#ed333b",
+            "frosting_color": "#deddda",
+            "piping_color": "#ffffff",
+            "theme_color": "#ffffff",
+            "topper_color": "#ffffff"
+        },
+        "embellishment": {
+            "colorable": true,
+            "id": 1,
+            "name": "Sprinkles",
+            "price": 5.0,
+            "type": "edible"
+        },
+        "filling": {
+            "colorable": true,
+            "id": 1,
+            "name": "Vanilla Buttercream",
+            "price": 20.0
+        },
+        "frosting": {
+            "colorable": true,
+            "description": "Smooth and creamy",
+            "id": 1,
+            "name": "Buttercream",
+            "price": 30.0
+        },
+        "layer": {
+            "description": "Basic single layer cake",
+            "id": 1,
+            "name": "Single Layer",
+            "price": 100.0
+        },
+        "message": "                                hi dgfhjk        \r\n                                    ",
+        "packaging": {
+            "colorable": false,
+            "id": 1,
+            "name": "Standard Box",
+            "price": 5.0
+        },
+        "piping": {
+            "colorable": true,
+            "id": 1,
+            "name": "Simple Border",
+            "price": 10.0
+        },
+        "shape": {
+            "id": 1,
+            "name": "Round",
+            "price": 0.0,
+            "sizes": [
+                "6\"",
+                "8\"",
+                "10\"",
+                "12\""
+            ]
+        },
+        "size": "6\"",
+        "support": {
+            "description": "For single layer cakes",
+            "id": 1,
+            "name": "Basic Support",
+            "price": 10.0
+        },
+        "theme": {
+            "colorable": false,
+            "id": 8,
+            "name": "No Specific Theme",
+            "price": 0.0
+        },
+        "timestamp": "2026-01-05T05:02:23.557937",
+        "topper": {
+            "colorable": true,
+            "id": 1,
+            "name": "Number/Letter Topper",
+            "price": 15.0
+        },
+        "total_price": 195.0,
+        "custom_id": "custom_1767569554",
+        "user_id": 8
+    }
+]
